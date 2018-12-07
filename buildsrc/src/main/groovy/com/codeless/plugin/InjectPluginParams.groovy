@@ -1,6 +1,6 @@
 package com.codeless.plugin
 
-public class InjectPluginParams {
+class InjectPluginParams {
     String pluginName = ''
     boolean enableModify = true
     boolean watchTimeConsume = false

@@ -18,12 +18,12 @@ class TimeListener implements TaskExecutionListener, BuildListener {
     @Override
     void beforeExecute(Task task) {
         Log.learn("beforeExecute")
-        clock = new Clock()
+        clock = new Clock(System.currentTimeMillis())
     }
 
     @Override
     void afterExecute(Task task, TaskState taskState) {
-        def ms = clock.timeInMs
+        def ms = System.currentTimeMillis() - clock.getStartTime()
         times.add([ms, task.path])
         totalTime += ms
         Log.info "${task.path} 花费时间 spend ${ms}ms"

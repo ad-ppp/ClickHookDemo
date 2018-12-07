@@ -26,10 +26,32 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha1'
+
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':tracker')
+}
 
-    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha1'
+// 直接引用buildSrc的插件类
+apply plugin: com.codeless.plugin.InjectPluginImpl
+
+codelessConfig {
+    //this will determine the name of this plugin transform, no practical use.
+    pluginName = 'myPluginTest'
+    //turn this on to make it print help content, default value is true
+    showHelp = true
+    //this flag will decide whether the log of the modifying process be printed or not, default value is false
+    keepQuiet = false
+    //this is a kit feature of the plugin, set it true to see the time consume of this build
+    watchTimeConsume = true
+
+    //this is the most important part, 3rd party JAR packages that want our plugin to inject;
+    //our plugin will inject package defined in 'AndroidManifest.xml' and 'butterknife.internal.butterknife.internal.DebouncingOnClickListener' by default.
+    //structure is like ['butterknife.internal','com.a.c'], type is HashSet<String>.
+    //You can also specify the name of the class;
+    //example: ['com.xxx.xxx.BaseFragment']
+    targetPackages = ['com.netease.youliao.newsfeeds.ui']
 }

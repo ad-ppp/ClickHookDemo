@@ -140,7 +140,7 @@ public class PluginAgent {
         return true;
     }
 
-    private static boolean checkFragment(android.app.Fragment paramFragment) {
+    private static boolean checkFragment(Fragment paramFragment) {
         return true;
     }
 
