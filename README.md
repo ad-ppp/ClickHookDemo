@@ -14,3 +14,21 @@
 - [应用于Android无埋点的Gradle插件解析](https://www.jianshu.com/p/250c83449dc0)
 - [AMS-bytecode 工具](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
 - [base on the project-hibeaver](https://github.com/BryanSharp/hibeaver)
+
+---
+
+遇到的坑：
+##### 1. java sdk版本过高； Could not determine java version from '10.0.1'. 导致不能debug gradle plugin
+    rm sdk高版本，安装低版本。
+    
+##### 2. gradle not found
+    brew install gradle
+    
+    
+    
+    
+##### tools:
+1. [plugin-ASM bytecode outLine](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
+
+## Thanks To:
+1. [通过Gradle的Transform配合ASM实战路由框架和统计方法耗时](https://blog.csdn.net/Neacy_Zz/article/details/78546237)
