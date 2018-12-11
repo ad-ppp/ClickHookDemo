@@ -7,15 +7,7 @@ import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.util.Pair;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.CompoundButton;
-import android.widget.ExpandableListView;
-import android.widget.RadioGroup;
-import android.widget.RatingBar;
-import android.widget.SeekBar;
-
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import android.widget.*;
 import com.codeless.tracker.utils.PathUtil;
 import com.codeless.tracker.utils.StringEncrypt;
 
@@ -49,46 +41,53 @@ public class PluginAgent {
 
     public static void onClick(View view) {
         boolean hasBusiness = false;
-        // 解析dataPath
+
         Context context = view.getContext();
         if (context instanceof Activity) {
-            String pageName = context.getClass().getSimpleName();
+            String pageName = context.getClass().getName();
             String currViewPath = PathUtil.getViewPath(view);
             String eventId = StringEncrypt.Encrypt(pageName + currViewPath, StringEncrypt.DEFAULT);
-            Map<String, Object> configureMap = Tracker.instance(context).getConfigureMap();
-            if (null != configureMap) {
-                JSONArray nodesArr = (JSONArray) configureMap.get(pageName);
-                if (null != nodesArr && nodesArr.size() > 0) {
-                    for (int i = 0; i < nodesArr.size(); i++) {
-                        JSONObject nodeObj = nodesArr.getJSONObject(i);
-                        String viewPath = nodeObj.getString(ConfigConstants.VIEWPATH);
-                        String dataPath = nodeObj.getString(ConfigConstants.DATAPATH);
-                        if (currViewPath.equals(viewPath) || PathUtil.match(currViewPath, viewPath)) {
-                            // 按照路径dataPath搜集数据
-                            Object businessData = PathUtil.getDataObj(view, dataPath);
-                            Map<String, Object> attributes = new HashMap<>();
-                            attributes.put(ConfigConstants.PAGENAME, pageName);
-                            attributes.put(ConfigConstants.VIEWPATH, currViewPath);
-                            JSONArray subPaths = nodeObj.getJSONArray(ConfigConstants.VIEWPATHSUB);
-                            if (null == subPaths || subPaths.size() == 0) {
-                                attributes.put(ConfigConstants.BUSINESSDATA, businessData);
-                            } else {
-                                for (int j = 0; j < subPaths.size(); j++) {
-                                    String subPath = subPaths.getString(j);
-                                    Object obj = PathUtil.getDataObj(businessData, subPath);
-                                    attributes.put(subPath, obj);
-                                }
-                            }
-                            Tracker.instance(context).trackEvent(eventId, attributes);
-                            hasBusiness = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            if (!hasBusiness) {
-                Tracker.instance(context).trackEvent(eventId, null);
-            }
+
+//            Map<String, Object> configureMap = Tracker.instance(context).getConfigureMap();
+//            if (null != configureMap) {
+//                JSONArray nodesArr = (JSONArray) configureMap.get(pageName);
+//                if (null != nodesArr && nodesArr.size() > 0) {
+//                    for (int i = 0; i < nodesArr.size(); i++) {
+//                        JSONObject nodeObj = nodesArr.getJSONObject(i);
+//                        String viewPath = nodeObj.getString(ConfigConstants.VIEWPATH);
+//                        String dataPath = nodeObj.getString(ConfigConstants.DATAPATH);
+//                        if (currViewPath.equals(viewPath) || PathUtil.match(currViewPath, viewPath)) {
+//                            // 按照路径dataPath搜集数据
+//                            Object businessData = PathUtil.getDataObj(view, dataPath);
+//                            Map<String, Object> attributes = new HashMap<>();
+//                            attributes.put(ConfigConstants.PAGENAME, pageName);
+//                            attributes.put(ConfigConstants.VIEWPATH, currViewPath);
+//                            JSONArray subPaths = nodeObj.getJSONArray(ConfigConstants.VIEWPATHSUB);
+//                            if (null == subPaths || subPaths.size() == 0) {
+//                                attributes.put(ConfigConstants.BUSINESSDATA, businessData);
+//                            } else {
+//                                for (int j = 0; j < subPaths.size(); j++) {
+//                                    String subPath = subPaths.getString(j);
+//                                    Object obj = PathUtil.getDataObj(businessData, subPath);
+//                                    attributes.put(subPath, obj);
+//                                }
+//                            }
+//                            Tracker.instance(context).trackEvent(eventId, attributes);
+//                            hasBusiness = true;
+//                            break;
+//                        }
+//                    }
+//                }
+//            }
+//
+//            if (!hasBusiness) {
+//                Tracker.instance(context).trackEvent(eventId, null);
+//            }
+
+            Map<String, Object> map = new HashMap<>();
+            map.put(ConfigConstants.PAGENAME, pageName);
+            map.put(ConfigConstants.VIEWPATH, currViewPath);
+            Tracker.instance(context).trackEvent(eventId, map);
         }
     }
 

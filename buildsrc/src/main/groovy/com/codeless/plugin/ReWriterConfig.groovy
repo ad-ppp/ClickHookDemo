@@ -6,7 +6,7 @@ import jdk.internal.org.objectweb.asm.Opcodes
  * Created by zhangdan on 17/3/3.
  */
 
-public class ReWriterConfig {
+class ReWriterConfig {
 
     /**
      * 必须是全路径形式，不是点分形式的包名

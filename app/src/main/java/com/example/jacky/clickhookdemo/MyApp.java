@@ -1,4 +1,12 @@
 package com.example.jacky.clickhookdemo;
 
-public class MyApp {
+import android.app.Application;
+import com.codeless.tracker.Tracker;
+
+public class MyApp extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Tracker.init(this);
+    }
 }

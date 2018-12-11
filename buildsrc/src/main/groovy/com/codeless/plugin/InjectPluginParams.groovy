@@ -7,4 +7,5 @@ class InjectPluginParams {
     boolean keepQuiet = false
     boolean showHelp = true
     HashSet<String> targetPackages = []
+    HashSet<String> listenerMethod = []
 }

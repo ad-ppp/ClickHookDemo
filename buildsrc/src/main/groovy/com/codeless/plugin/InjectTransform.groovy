@@ -1,13 +1,6 @@
 import com.android.annotations.NonNull
 import com.android.annotations.Nullable
-import com.android.build.api.transform.Context
-import com.android.build.api.transform.DirectoryInput
-import com.android.build.api.transform.Format
-import com.android.build.api.transform.JarInput
-import com.android.build.api.transform.Transform
-import com.android.build.api.transform.TransformException
-import com.android.build.api.transform.TransformInput
-import com.android.build.api.transform.TransformOutputProvider
+import com.android.build.api.transform.*
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.internal.pipeline.TransformManager
 import com.codeless.plugin.utils.DataHelper
@@ -23,16 +16,14 @@ import java.util.jar.JarEntry
 import java.util.jar.JarFile
 import java.util.jar.JarOutputStream
 import java.util.zip.ZipEntry
-import com.android.build.api.transform.QualifiedContent
-
 
 class InjectTransform extends Transform {
     static AppExtension android
-    // our plugin will inject 'butterknife.internal.DebouncingOnClickListener' by default.
-    static HashSet<String> targetPackages = ['butterknife.internal.DebouncingOnClickListener']
+    static HashSet<String> targetPackages = []
+    static HashSet<String> listenerMethod = []
     private static Project project
 
-    public InjectTransform(Project project) {
+    InjectTransform(Project project) {
         InjectTransform.project = project
     }
 
@@ -57,7 +48,7 @@ class InjectTransform extends Transform {
     }
 
     @Override
-    public void transform(
+    void transform(
             @NonNull Context context,
             @NonNull Collection<TransformInput> inputs,
             @NonNull Collection<TransformInput> referencedInputs,
@@ -65,20 +56,26 @@ class InjectTransform extends Transform {
             boolean isIncremental) throws IOException, TransformException, InterruptedException {
         Log.info "==============${project.codelessConfig.pluginName + ' '}transform enter=============="
         android = project.extensions.getByType(AppExtension)
-//        String flavorAndBuildType = context.name.split("For")[1]
-//        Log.info("flavorAndBuildType ${flavorAndBuildType}")
 
-        // our plugin will inject app package by default.
         String appPackageName = getAppPackageName()
         if (appPackageName != null) {
             targetPackages.add(appPackageName)
         }
+
+        Log.info "====packageName====${appPackageName}"
+        Log.info "====targetPackages====${targetPackages}"
 
         // 3rd party JAR packages that want our plugin to inject.
         HashSet<String> inputPackages = project.codelessConfig.targetPackages
         if (inputPackages != null) {
             targetPackages.addAll(inputPackages)
             Log.info "==============@targetPackages = ${targetPackages}=============="
+        }
+
+        HashSet<String> injectMethods = project.codelessConfig.listenerMethod
+        if (injectMethods != null) {
+            listenerMethod.addAll(injectMethods)
+            Log.info "==============@listenerMethod = ${listenerMethod}=============="
         }
 
         /**
@@ -136,10 +133,32 @@ class InjectTransform extends Transform {
              */
             input.directoryInputs.each { DirectoryInput directoryInput ->
                 File dest = outputProvider.getContentLocation(directoryInput.name, directoryInput.contentTypes, directoryInput.scopes, Format.DIRECTORY)
-//                Log.info("dest dir  ${dest.absolutePath}")
                 File dir = directoryInput.file
-                if (dir) {
+                if (dir.isDirectory()) {
                     HashMap<String, File> modifyMap = new HashMap<>()
+//                    dir.eachFileRecurse { File file ->
+//                        def name = file.name
+//
+//                        if (name.endsWith(".class") && !name.startsWith("R\$") &&
+//                                name != "R.class" && name != "BuildConfig.class") {
+//
+//                            println name + ' is changing...'
+//
+//                            ClassReader cr = new ClassReader(file.bytes)
+//                            ClassWriter cw = new ClassWriter(cr, ClassWriter.COMPUTE_MAXS)
+//                            ClassVisitor cv = new CostClassVisitor(cw)
+//
+//                            cr.accept(cv, EXPAND_FRAMES)
+//
+//                            byte[] code = cw.toByteArray()
+//
+//                            FileOutputStream fos = new FileOutputStream(
+//                                    file.parentFile.absolutePath + File.separator + name)
+//                            fos.write(code)
+//                            fos.close()
+//                        }
+//                    }
+
                     dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.class/) {
                         File classFile ->
                             File modified = modifyClassFile(dir, classFile, context.getTemporaryDir())
@@ -179,13 +198,14 @@ class InjectTransform extends Transform {
      * @param className 形如 android.app.Fragment 的类名
      * @return
      */
+    @SuppressWarnings("ChangeToOperator")
     static boolean shouldModifyClass(String className) {
         if (project.codelessConfig.enableModify && targetPackages != null) {
             Iterator<String> iterator = targetPackages.iterator()
             // 注意，闭包里的return语句相当于continue，不会跳出遍历，故用while或for
             while (iterator.hasNext()) {
-                String packagename = iterator.next()
-                if (className.contains(packagename)) {
+                String packageName = iterator.next()
+                if (className.contains(packageName)) {
                     return (!className.contains("R\$") && !className.endsWith("R") && !className.endsWith("BuildConfig"))
                 }
             }
@@ -198,7 +218,7 @@ class InjectTransform extends Transform {
      * @param buildDir 是项目的build class目录,就是我们需要注入的class所在地
      * @param lib 这个是hackdex的目录,就是AntilazyLoad类的class文件所在地
      */
-    public static File modifyJarFile(File jarFile, File tempDir) {
+    static File modifyJarFile(File jarFile, File tempDir) {
         if (jarFile) {
             /** 设置输出到的jar */
             def hexName = DigestUtils.md5Hex(jarFile.absolutePath).substring(0, 8)
@@ -247,8 +267,8 @@ class InjectTransform extends Transform {
         entryName.replace(File.separator, ".").replace(".class", "")
     }
 
-    public static File modifyClassFile(File dir, File classFile, File tempDir) {
-        File modified
+    static File modifyClassFile(File dir, File classFile, File tempDir) {
+        File modified = null
         try {
             String className = path2Classname(classFile.absolutePath.replace(dir.absolutePath + File.separator, ""))
             byte[] sourceClassBytes = IOUtils.toByteArray(new FileInputStream(classFile))
@@ -261,19 +281,20 @@ class InjectTransform extends Transform {
                     }
                     modified.createNewFile()
                     new FileOutputStream(modified).write(modifiedClassBytes)
+                    Log.info("modified class file dir : " + modified.getAbsolutePath())
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace()
         }
         return modified
-
     }
     /**
      * 该jar文件是否包含需要修改的类
      * @param jarFile
      * @return
      */
-    public static boolean isJarNeedModify(File jarFile) {
+    static boolean isJarNeedModify(File jarFile) {
         boolean modified = false
         if (targetPackages != null && targetPackages.size() > 0) {
             if (jarFile) {

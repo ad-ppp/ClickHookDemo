@@ -7,6 +7,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 class InjectPluginImpl implements Plugin<Project> {
+
     @Override
     void apply(Project project) {
         println ":applied LazierTracker"
@@ -35,6 +36,7 @@ class InjectPluginImpl implements Plugin<Project> {
 
     static void initDir(Project project) {
         File pluginTmpDir = new File(project.buildDir, 'LazierTracker')
+        Log.info("plugin work dir:" + pluginTmpDir.getAbsolutePath())
         if (!pluginTmpDir.exists()) {
             pluginTmpDir.mkdir()
         }

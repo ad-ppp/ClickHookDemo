@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.AdapterView;
 import android.widget.ExpandableListView;
-
 import com.codeless.tracker.ConfigConstants;
 import com.codeless.tracker.PluginAgent;
 
@@ -86,7 +85,7 @@ public class PathUtil {
         StringBuilder builder = new StringBuilder();
         ViewParent parent = view.getParent();
         View child = view;
-        while (parent != null && parent instanceof ViewGroup) {
+        while (parent instanceof ViewGroup) {
             ViewGroup group = (ViewGroup) parent;
             // 根据parent推算[index]部分
             String validIndexSegment = "";
@@ -232,7 +231,7 @@ public class PathUtil {
     /**
      * Gets info of currentActivity's Fragments.
      *
-     * @return HashMap<fragmentHashCode, Pair<fragmentViewCode, simpleClassName></>>
+     * @return HashMap<fragmentHashCode               ,                               Pair               <               fragmentViewCode               ,                               simpleClassName></>>
      */
     private static HashMap<Integer, Pair<Integer, String>> getAliveFragments() {
         return PluginAgent.sAliveFragMap;

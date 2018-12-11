@@ -9,9 +9,9 @@ import org.objectweb.asm.*
  * Modified by nailperry on 2017/3/2.
  *
  */
-public class ModifyClassUtil {
+class ModifyClassUtil {
 
-    public static byte[] modifyClasses(String className, byte[] srcByteCode) {
+    static byte[] modifyClasses(String className, byte[] srcByteCode) {
         byte[] classBytesCode = null
         try {
             Log.info("====start modifying ${className}====")
@@ -47,7 +47,7 @@ public class ModifyClassUtil {
     }
 
     private static boolean instanceOfFragment(String superName) {
-        return superName.equals('android/app/Fragment') || superName.equals('android/support/v4/app/Fragment')
+        return superName == 'android/app/Fragment' || superName == 'android/support/v4/app/Fragment'
     }
 
     /**
@@ -58,7 +58,7 @@ public class ModifyClassUtil {
      *            INVOKEINTERFACE.
      * @param owner
      *            the internal name of the method's owner class (see
-     *            {@link org.objectweb.asm.Type#getInternalName() getInternalName}).
+     * {@link org.objectweb.asm.Type#getInternalName() getInternalName}).
      * @param name
      *            the method's name.
      * @param desc
@@ -70,7 +70,8 @@ public class ModifyClassUtil {
      * @param paramOpcodes 参数类型对应的ASM指令
      *
      */
-    private static void visitMethodWithLoadedParams(MethodVisitor methodVisitor, int opcode, String owner, String methodName, String methodDesc, int start, int count, List<Integer> paramOpcodes) {
+    private
+    static void visitMethodWithLoadedParams(MethodVisitor methodVisitor, int opcode, String owner, String methodName, String methodDesc, int start, int count, List<Integer> paramOpcodes) {
         for (int i = start; i < start + count; i++) {
             methodVisitor.visitVarInsn(paramOpcodes[i - start], i)
         }
@@ -82,12 +83,9 @@ public class ModifyClassUtil {
         public HashSet<String> visitedFragMethods = new HashSet<>()// 无需判空
         private String superName
         private String[] interfaces
-        private ClassVisitor classVisitor
 
-        public MethodFilterClassVisitor(
-                final ClassVisitor cv) {
+        MethodFilterClassVisitor(final ClassVisitor cv) {
             super(Opcodes.ASM5, cv)
-            this.classVisitor = cv
         }
 
         @Override
@@ -105,7 +103,8 @@ public class ModifyClassUtil {
 
                     if (visitedFragMethods.contains(key))
                         continue
-                    mv = classVisitor.visitMethod(Opcodes.ACC_PUBLIC, methodCell.name, methodCell.desc, null, null)
+
+                    mv = cv.visitMethod(Opcodes.ACC_PUBLIC, methodCell.name, methodCell.desc, null, null)
                     mv.visitCode()
                     // call super
                     visitMethodWithLoadedParams(mv, Opcodes.INVOKESPECIAL, superName, methodCell.name, methodCell.desc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
@@ -157,8 +156,8 @@ public class ModifyClassUtil {
         }
 
         @Override
-        public void visit(int version, int access, String name,
-                          String signature, String superName, String[] interfaces) {
+        void visit(int version, int access, String name,
+                   String signature, String superName, String[] interfaces) {
             Log.logEach('* visit *', Log.accCode2String(access), name, signature, superName, interfaces)
             this.superName = superName
             this.interfaces = interfaces
@@ -166,37 +165,37 @@ public class ModifyClassUtil {
         }
 
         @Override
-        public MethodVisitor visitMethod(int access, String name,
-                                         String desc, String signature, String[] exceptions) {
+        MethodVisitor visitMethod(int access, String name,
+                                  String desc, String signature, String[] exceptions) {
             MethodVisitor myMv = null
             if (!onlyVisit) {
                 Log.logEach("* visitMethod *", Log.accCode2String(access), name, desc, signature, exceptions)
             }
-            if (interfaces != null && interfaces.length > 0) {
-                MethodCell methodCell = ReWriterConfig.sInterfaceMethods.get(name + desc)
-                if (methodCell != null && interfaces.contains(methodCell.parent)) {
-                    if (onlyVisit) {
-                        myMv = new MethodLogVisitor(cv.visitMethod(access, name, desc, signature, exceptions))
-                    } else {
-                        try {
-                            MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions)
-                            myMv = new MethodLogVisitor(methodVisitor) {
-                                @Override
-                                void visitCode() {
-                                    super.visitCode()
-                                    visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
-                                }
+            MethodCell methodCell
+
+            methodCell = ReWriterConfig.sInterfaceMethods.get(name + desc)
+            if (methodCell != null) {
+                if (onlyVisit) {
+                    myMv = new MethodLogVisitor(cv.visitMethod(access, name, desc, signature, exceptions))
+                } else {
+                    try {
+                        MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions)
+                        myMv = new MethodLogVisitor(methodVisitor) {
+                            @Override
+                            void visitCode() {
+                                super.visitCode()
+                                visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
                             }
-                        } catch (Exception e) {
-                            e.printStackTrace()
-                            myMv = null
                         }
+                    } catch (Exception e) {
+                        e.printStackTrace()
+                        myMv = null
                     }
                 }
             }
 
             if (instanceOfFragment(superName)) {
-                MethodCell methodCell = ReWriterConfig.sFragmentMethods.get(name + desc)
+                methodCell = ReWriterConfig.sFragmentMethods.get(name + desc)
                 if (methodCell != null) {
                     // 记录该方法已存在
                     visitedFragMethods.add(name + desc)
@@ -209,7 +208,6 @@ public class ModifyClassUtil {
 
                                 @Override
                                 void visitInsn(int opcode) {
-
                                     // 确保super.onHiddenChanged(hidden);等先被调用
                                     if (opcode == Opcodes.RETURN) { //在返回之前安插代码
                                         visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
@@ -225,6 +223,7 @@ public class ModifyClassUtil {
                     }
                 }
             }
+
             if (myMv != null) {
                 if (onlyVisit) {
                     Log.logEach("* revisitMethod *", Log.accCode2String(access), name, desc, signature)
