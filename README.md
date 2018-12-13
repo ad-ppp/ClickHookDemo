@@ -19,7 +19,6 @@
 - [异常简单的demo-任何自定义 gradle plugin](https://github.com/jacky1234/SimplePluginDemo)
 - [Android无埋点数据收集SDK关键技术](https://www.jianshu.com/p/b5ffe845fe2d)
 - [应用于Android无埋点的Gradle插件解析](https://www.jianshu.com/p/250c83449dc0)
-- [AMS-bytecode 工具](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
 - [base on the project-hibeaver](https://github.com/BryanSharp/hibeaver)
 
 ---
@@ -40,7 +39,10 @@
 1. 通过AOP技术，实现耗时操作统计，并列举出UI操作比较耗时的方法。
     
 ##### tools:
-1. [plugin-ASM bytecode outLine](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
+**1. [plugin-ASM bytecode outLine](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)**
+- [AMS-bytecode 工具操作字节码介绍](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
+
+===
 
 ## Thanks To:
 1. [通过Gradle的Transform配合ASM实战路由框架和统计方法耗时](https://blog.csdn.net/Neacy_Zz/article/details/78546237)
