@@ -9,7 +9,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Pair;
 import android.view.View;
-import android.widget.*;
+import android.widget.AdapterView;
+import android.widget.CompoundButton;
+import android.widget.ExpandableListView;
+import android.widget.RadioGroup;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
+
 import com.codeless.tracker.utils.PathUtil;
 import com.codeless.tracker.utils.StringEncrypt;
 
@@ -23,8 +29,7 @@ import java.util.Map;
  */
 
 public class PluginAgent {
-
-    public static Map<Integer, Pair<Integer, String>> sAliveFragMap = new HashMap<>();
+    public static HashMap<Integer, Pair<Integer, String>> sAliveFragMap = new HashMap<>();
     private static final String TAG = "PluginAgent";
 
     private Activity getActivity(View view) {
