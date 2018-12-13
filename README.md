@@ -7,7 +7,13 @@
 
 
 ## 2. Gradle plugin 方式
-不存在效率问题，只会牺牲一些编译速度
+示例： `SecondActivity`
+
+优点：
+    不存在效率问题，只会牺牲一些编译速度.
+    而且可以对第三方Library注入字节码实现。
+    
+原理：
 
 参考： 
 - [异常简单的demo-任何自定义 gradle plugin](https://github.com/jacky1234/SimplePluginDemo)

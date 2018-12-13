@@ -13,7 +13,7 @@ class ReWriterConfig {
      */
     public static String sAgentClassName = 'com/codeless/tracker/PluginAgent'
 
-//    String name
+//    String signature
 //    String desc
 //    String parent
 //    String agentName
@@ -115,8 +115,6 @@ class ReWriterConfig {
                 '(Ljava/lang/Object;Landroid/widget/RadioGroup;I)V',
                 0, 3,
                 [Opcodes.ALOAD, Opcodes.ALOAD, Opcodes.ILOAD]))
-
-        // Todo: 扩展
     }
 
     /**
@@ -156,6 +154,37 @@ class ReWriterConfig {
                 '(Ljava/lang/Object;Z)V',
                 0, 2,
                 [Opcodes.ALOAD, Opcodes.ILOAD]))
+    }
+
+    /**
+     * Activity中的方法
+     */
+    public final static HashMap<String, MethodCell> sActivityMethods = new HashMap<>()
+    static {
+        sActivityMethods.put('onCreate(Landroid/os/Bundle;)V', new MethodCell(
+                'onCreate',
+                '(Landroid/os/Bundle;)V',
+                '',             // parent省略，均为 android/app/Fragment 或 android/support/v4/app/Fragment
+                'onActivityCreate',
+                '(Ljava/lang/Object;Landroid/os/Bundle;)V',
+                0, 2,
+                [Opcodes.ALOAD, Opcodes.ALOAD]))
+        sActivityMethods.put('onResume()V', new MethodCell(
+                'onResume',
+                '()V',
+                '',             // parent省略，均为 android/app/Fragment 或 android/support/v4/app/Fragment
+                'onActivityResume',
+                '(Ljava/lang/Object;)V',
+                0, 1,
+                [Opcodes.ALOAD]))
+        sActivityMethods.put('onPause()V', new MethodCell(
+                'onPause',
+                '()V',
+                '',
+                'onActivityPause',
+                '(Ljava/lang/Object;)V',
+                0, 1,
+                [Opcodes.ALOAD]))
     }
 
 }

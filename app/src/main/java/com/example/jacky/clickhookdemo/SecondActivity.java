@@ -2,9 +2,8 @@ package com.example.jacky.clickhookdemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends TestActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -14,5 +13,15 @@ public class SecondActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new SecondFragment())
                 .commit();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

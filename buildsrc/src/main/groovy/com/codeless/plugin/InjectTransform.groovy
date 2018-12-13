@@ -62,20 +62,11 @@ class InjectTransform extends Transform {
             targetPackages.add(appPackageName)
         }
 
-        Log.info "====packageName====${appPackageName}"
-        Log.info "====targetPackages====${targetPackages}"
-
         // 3rd party JAR packages that want our plugin to inject.
         HashSet<String> inputPackages = project.codelessConfig.targetPackages
         if (inputPackages != null) {
             targetPackages.addAll(inputPackages)
             Log.info "==============@targetPackages = ${targetPackages}=============="
-        }
-
-        HashSet<String> injectMethods = project.codelessConfig.listenerMethod
-        if (injectMethods != null) {
-            listenerMethod.addAll(injectMethods)
-            Log.info "==============@listenerMethod = ${listenerMethod}=============="
         }
 
         /**
@@ -134,30 +125,9 @@ class InjectTransform extends Transform {
             input.directoryInputs.each { DirectoryInput directoryInput ->
                 File dest = outputProvider.getContentLocation(directoryInput.name, directoryInput.contentTypes, directoryInput.scopes, Format.DIRECTORY)
                 File dir = directoryInput.file
+                Log.info "========traverse=====${dest.getAbsolutePath()}\t${dir.getAbsolutePath()}"
                 if (dir.isDirectory()) {
                     HashMap<String, File> modifyMap = new HashMap<>()
-//                    dir.eachFileRecurse { File file ->
-//                        def name = file.name
-//
-//                        if (name.endsWith(".class") && !name.startsWith("R\$") &&
-//                                name != "R.class" && name != "BuildConfig.class") {
-//
-//                            println name + ' is changing...'
-//
-//                            ClassReader cr = new ClassReader(file.bytes)
-//                            ClassWriter cw = new ClassWriter(cr, ClassWriter.COMPUTE_MAXS)
-//                            ClassVisitor cv = new CostClassVisitor(cw)
-//
-//                            cr.accept(cv, EXPAND_FRAMES)
-//
-//                            byte[] code = cw.toByteArray()
-//
-//                            FileOutputStream fos = new FileOutputStream(
-//                                    file.parentFile.absolutePath + File.separator + name)
-//                            fos.write(code)
-//                            fos.close()
-//                        }
-//                    }
 
                     dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.class/) {
                         File classFile ->
@@ -334,7 +304,7 @@ class InjectTransform extends Transform {
      * @return
      */
     private static String getAppPackageName() {
-        String packageName
+        String packageName = null
         try {
             def manifestFile = android.sourceSets.main.manifest.srcFile
             Log.info("XmlParser manifestFile: " + manifestFile)
@@ -343,6 +313,6 @@ class InjectTransform extends Transform {
         } catch (Exception e) {
             Log.info("XmlParser Exception: " + e.getMessage())
         }
-        return packageName
+        packageName
     }
 }

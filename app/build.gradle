@@ -56,7 +56,4 @@ codelessConfig {
     //You can also specify the name of the class;
     //example: ['com.xxx.xxx.BaseFragment']
     targetPackages = []
-
-    //{method}_{param}
-    listenerMethod = ["onClick(Landroid/view/View;)V"]
 }

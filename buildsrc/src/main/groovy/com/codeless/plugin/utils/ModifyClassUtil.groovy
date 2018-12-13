@@ -50,6 +50,10 @@ class ModifyClassUtil {
         return superName == 'android/app/Fragment' || superName == 'android/support/v4/app/Fragment'
     }
 
+    private static boolean instanceOfActivity(String superName) {
+        return superName == 'android/app/Activity' || superName == 'android/support/v7/app/AppCompatActivity'
+    }
+
     /**
      *
      * @param opcode
@@ -81,6 +85,7 @@ class ModifyClassUtil {
     static class MethodFilterClassVisitor extends ClassVisitor {
         public boolean onlyVisit = false
         public HashSet<String> visitedFragMethods = new HashSet<>()// 无需判空
+        private String name
         private String superName
         private String[] interfaces
 
@@ -92,28 +97,33 @@ class ModifyClassUtil {
         void visitEnd() {
             Log.logEach('* visitEnd *')
 
+            MethodVisitor mv
+            Iterator<Map.Entry<String, MethodCell>> iterator
             if (instanceOfFragment(superName)) {
-                MethodVisitor mv
                 // 添加剩下的方法，确保super.onHiddenChanged(hidden);等先被调用
-                Iterator<Map.Entry<String, MethodCell>> iterator = ReWriterConfig.sFragmentMethods.entrySet().iterator()
-                while (iterator.hasNext()) {
-                    Map.Entry<String, MethodCell> entry = iterator.next()
-                    String key = entry.getKey()
-                    MethodCell methodCell = entry.getValue()
+                iterator = ReWriterConfig.sFragmentMethods.entrySet().iterator()
+            } else if (instanceOfActivity(superName)) {
+                Log.info "====scanning activity===${this.name}#${name}"
+                iterator = ReWriterConfig.sActivityMethods.entrySet().iterator()
+            }
 
-                    if (visitedFragMethods.contains(key))
-                        continue
+            while (iterator != null && iterator.hasNext()) {
+                Map.Entry<String, MethodCell> entry = iterator.next()
+                String key = entry.getKey()
+                MethodCell methodCell = entry.getValue()
 
-                    mv = cv.visitMethod(Opcodes.ACC_PUBLIC, methodCell.name, methodCell.desc, null, null)
-                    mv.visitCode()
-                    // call super
-                    visitMethodWithLoadedParams(mv, Opcodes.INVOKESPECIAL, superName, methodCell.name, methodCell.desc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
-                    // call injected method
-                    visitMethodWithLoadedParams(mv, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
-                    mv.visitInsn(Opcodes.RETURN)
-                    mv.visitMaxs(methodCell.paramsCount, methodCell.paramsCount)
-                    mv.visitEnd()
-                }
+                if (visitedFragMethods.contains(key))
+                    continue
+
+                mv = cv.visitMethod(Opcodes.ACC_PUBLIC, methodCell.name, methodCell.desc, null, null)
+                mv.visitCode()
+                // call super
+                visitMethodWithLoadedParams(mv, Opcodes.INVOKESPECIAL, superName, methodCell.name, methodCell.desc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
+                // call injected method
+                visitMethodWithLoadedParams(mv, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
+                mv.visitInsn(Opcodes.RETURN)
+                mv.visitMaxs(methodCell.paramsCount, methodCell.paramsCount)
+                mv.visitEnd()
             }
             super.visitEnd()
         }
@@ -159,6 +169,7 @@ class ModifyClassUtil {
         void visit(int version, int access, String name,
                    String signature, String superName, String[] interfaces) {
             Log.logEach('* visit *', Log.accCode2String(access), name, signature, superName, interfaces)
+            this.name = name
             this.superName = superName
             this.interfaces = interfaces
             super.visit(version, access, name, signature, superName, interfaces)
@@ -167,20 +178,19 @@ class ModifyClassUtil {
         @Override
         MethodVisitor visitMethod(int access, String name,
                                   String desc, String signature, String[] exceptions) {
-            MethodVisitor myMv = null
+            MethodVisitor mv = null
+
             if (!onlyVisit) {
                 Log.logEach("* visitMethod *", Log.accCode2String(access), name, desc, signature, exceptions)
             }
-            MethodCell methodCell
-
-            methodCell = ReWriterConfig.sInterfaceMethods.get(name + desc)
+            MethodCell methodCell = ReWriterConfig.sInterfaceMethods.get(name + desc)
             if (methodCell != null) {
                 if (onlyVisit) {
-                    myMv = new MethodLogVisitor(cv.visitMethod(access, name, desc, signature, exceptions))
+                    mv = new MethodLogVisitor(cv.visitMethod(access, name, desc, signature, exceptions))
                 } else {
                     try {
                         MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions)
-                        myMv = new MethodLogVisitor(methodVisitor) {
+                        mv = new MethodLogVisitor(methodVisitor) {
                             @Override
                             void visitCode() {
                                 super.visitCode()
@@ -189,46 +199,51 @@ class ModifyClassUtil {
                         }
                     } catch (Exception e) {
                         e.printStackTrace()
-                        myMv = null
+                        mv = null
                     }
                 }
             }
 
+            MethodCell methodCell2
             if (instanceOfFragment(superName)) {
-                methodCell = ReWriterConfig.sFragmentMethods.get(name + desc)
-                if (methodCell != null) {
-                    // 记录该方法已存在
-                    visitedFragMethods.add(name + desc)
-                    if (onlyVisit) {
-                        myMv = new MethodLogVisitor(cv.visitMethod(access, name, desc, signature, exceptions))
-                    } else {
-                        try {
-                            MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions)
-                            myMv = new MethodLogVisitor(methodVisitor) {
+                methodCell2 = ReWriterConfig.sFragmentMethods.get(name + desc)
+            } else if (instanceOfActivity(superName)) {
+                Log.info "====scanning activity===${this.name}#${name}"
+                methodCell2 = ReWriterConfig.sActivityMethods.get(name + desc)
+            }
 
-                                @Override
-                                void visitInsn(int opcode) {
-                                    // 确保super.onHiddenChanged(hidden);等先被调用
-                                    if (opcode == Opcodes.RETURN) { //在返回之前安插代码
-                                        visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
-                                    }
-                                    super.visitInsn(opcode)
+            if (methodCell2 != null) {
+                // 记录该方法已存在
+                visitedFragMethods.add(name + desc)
+                if (onlyVisit) {
+                    mv = new MethodLogVisitor(mv == null ? cv.visitMethod(access, name, desc, signature, exceptions) : mv)
+                } else {
+                    try {
+                        MethodVisitor methodVisitor = mv == null ? cv.visitMethod(access, name, desc, signature, exceptions) : mv
+                        mv = new MethodLogVisitor(methodVisitor) {
+
+                            @Override
+                            void visitInsn(int opcode) {
+                                // 确保super.onHiddenChanged(hidden);等先被调用
+                                if (opcode == Opcodes.RETURN) { //在返回之前安插代码
+                                    visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell2.agentName, methodCell2.agentDesc, methodCell2.paramsStart, methodCell2.paramsCount, methodCell2.opcodes)
                                 }
-
+                                super.visitInsn(opcode)
                             }
-                        } catch (Exception e) {
-                            e.printStackTrace()
-                            myMv = null
+
                         }
+                    } catch (Exception e) {
+                        e.printStackTrace()
+                        mv = null
                     }
                 }
             }
 
-            if (myMv != null) {
+            if (mv != null) {
                 if (onlyVisit) {
                     Log.logEach("* revisitMethod *", Log.accCode2String(access), name, desc, signature)
                 }
-                return myMv
+                return mv
             } else {
                 return cv.visitMethod(access, name, desc, signature, exceptions)
             }

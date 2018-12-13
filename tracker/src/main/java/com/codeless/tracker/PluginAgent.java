@@ -5,6 +5,8 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.DialogInterface;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Pair;
 import android.view.View;
 import android.widget.*;
@@ -22,7 +24,7 @@ import java.util.Map;
 
 public class PluginAgent {
 
-    public static HashMap<Integer, Pair<Integer, String>> sAliveFragMap = new HashMap<>();
+    public static Map<Integer, Pair<Integer, String>> sAliveFragMap = new HashMap<>();
     private static final String TAG = "PluginAgent";
 
     private Activity getActivity(View view) {
@@ -172,5 +174,17 @@ public class PluginAgent {
         if (null != obj) {
             sAliveFragMap.remove(obj.hashCode());
         }
+    }
+
+    public static void onActivityCreate(Object object, @Nullable Bundle savedInstanceState) {
+        ActivityAgent.onActivityCreate(object, savedInstanceState);
+    }
+
+    public static void onActivityResume(Object object) {
+        ActivityAgent.onActivityResume(object);
+    }
+
+    public static void onActivityPause(Object object) {
+        ActivityAgent.onActivityPause(object);
     }
 }
