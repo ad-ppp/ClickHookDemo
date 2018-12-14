@@ -186,7 +186,7 @@ class InjectTransform extends Transform {
     /**
      * 植入代码
      * @param buildDir 是项目的build class目录,就是我们需要注入的class所在地
-     * @param lib 这个是hackdex的目录,就是AntilazyLoad类的class文件所在地
+     * @param lib 这个是hackdex的目录,就是 AntilazyLoad 类的class文件所在地
      */
     static File modifyJarFile(File jarFile, File tempDir) {
         if (jarFile) {

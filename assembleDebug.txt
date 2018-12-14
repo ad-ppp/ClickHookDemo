@@ -1,0 +1,888 @@
+Starting a Gradle Daemon, 2 incompatible Daemons could not be reused, use --status for details
+:buildsrc:compileJava NO-SOURCE
+:buildsrc:compileGroovy UP-TO-DATE
+:buildsrc:processResources NO-SOURCE
+:buildsrc:classes UP-TO-DATE
+:buildsrc:jar
+:buildsrc:assemble
+:buildsrc:compileTestJava NO-SOURCE
+:buildsrc:compileTestGroovy NO-SOURCE
+:buildsrc:processTestResources NO-SOURCE
+:buildsrc:testClasses UP-TO-DATE
+:buildsrc:test NO-SOURCE
+:buildsrc:check UP-TO-DATE
+:buildsrc:build
+:applied LazierTracker
+plugin work dir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/LazierTracker
+
+watchTimeConsume enabled
+:app:checkDebugClasspath UP-TO-DATE
+:app:checkDebugClasspath 花费时间 spend 300ms
+:app:preBuild UP-TO-DATE
+:app:preBuild 花费时间 spend 1ms
+:tracker:preBuild UP-TO-DATE
+:tracker:preBuild 花费时间 spend 0ms
+:tracker:preDebugBuild UP-TO-DATE
+:tracker:preDebugBuild 花费时间 spend 0ms
+:tracker:checkDebugManifest UP-TO-DATE
+:tracker:checkDebugManifest 花费时间 spend 3ms
+:tracker:processDebugManifest UP-TO-DATE
+:tracker:processDebugManifest 花费时间 spend 11ms
+:app:preDebugBuild UP-TO-DATE
+:app:preDebugBuild 花费时间 spend 30ms
+:tracker:compileDebugAidl NO-SOURCE
+:tracker:compileDebugAidl 花费时间 spend 2ms
+:app:compileDebugAidl NO-SOURCE
+:app:compileDebugAidl 花费时间 spend 2ms
+:tracker:packageDebugRenderscript NO-SOURCE
+:tracker:packageDebugRenderscript 花费时间 spend 1ms
+:app:compileDebugRenderscript UP-TO-DATE
+:app:compileDebugRenderscript 花费时间 spend 12ms
+:app:checkDebugManifest UP-TO-DATE
+:app:checkDebugManifest 花费时间 spend 2ms
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugBuildConfig 花费时间 spend 4ms
+:app:mainApkListPersistenceDebug UP-TO-DATE
+:app:mainApkListPersistenceDebug 花费时间 spend 7ms
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResValues 花费时间 spend 2ms
+:app:generateDebugResources UP-TO-DATE
+:app:generateDebugResources 花费时间 spend 1ms
+:tracker:compileDebugRenderscript UP-TO-DATE
+:tracker:compileDebugRenderscript 花费时间 spend 17ms
+:tracker:generateDebugResValues UP-TO-DATE
+:tracker:generateDebugResValues 花费时间 spend 1ms
+:tracker:generateDebugResources UP-TO-DATE
+:tracker:generateDebugResources 花费时间 spend 0ms
+:tracker:packageDebugResources UP-TO-DATE
+:tracker:packageDebugResources 花费时间 spend 18ms
+:app:mergeDebugResources UP-TO-DATE
+:app:mergeDebugResources 花费时间 spend 157ms
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:createDebugCompatibleScreenManifests 花费时间 spend 4ms
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugManifest 花费时间 spend 11ms
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:app:splitsDiscoveryTaskDebug 花费时间 spend 1ms
+:tracker:generateDebugRFile UP-TO-DATE
+:tracker:generateDebugRFile 花费时间 spend 40ms
+:app:processDebugResources UP-TO-DATE
+:app:processDebugResources 花费时间 spend 18ms
+:tracker:generateDebugBuildConfig UP-TO-DATE
+:tracker:generateDebugBuildConfig 花费时间 spend 3ms
+:tracker:prepareLintJar UP-TO-DATE
+:tracker:prepareLintJar 花费时间 spend 1ms
+:tracker:generateDebugSources UP-TO-DATE
+:tracker:generateDebugSources 花费时间 spend 0ms
+:tracker:javaPreCompileDebug UP-TO-DATE
+:tracker:javaPreCompileDebug 花费时间 spend 6ms
+:tracker:compileDebugJavaWithJavac UP-TO-DATE
+:tracker:compileDebugJavaWithJavac 花费时间 spend 46ms
+:tracker:processDebugJavaRes NO-SOURCE
+:tracker:processDebugJavaRes 花费时间 spend 1ms
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug 花费时间 spend 5ms
+:app:compileDebugKotlin
+:app:compileDebugKotlin 花费时间 spend 549ms
+:app:prepareLintJar UP-TO-DATE
+:app:prepareLintJar 花费时间 spend 2ms
+:app:generateDebugSources UP-TO-DATE
+:app:generateDebugSources 花费时间 spend 1ms
+:app:javaPreCompileDebug UP-TO-DATE
+:app:javaPreCompileDebug 花费时间 spend 5ms
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugJavaWithJavac 花费时间 spend 46ms
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugNdk 花费时间 spend 1ms
+:app:compileDebugSources UP-TO-DATE
+:app:compileDebugSources 花费时间 spend 1ms
+:app:mergeDebugShaders UP-TO-DATE
+:app:mergeDebugShaders 花费时间 spend 2ms
+:app:compileDebugShaders UP-TO-DATE
+:app:compileDebugShaders 花费时间 spend 4ms
+:app:generateDebugAssets UP-TO-DATE
+:app:generateDebugAssets 花费时间 spend 1ms
+:tracker:mergeDebugShaders UP-TO-DATE
+:tracker:mergeDebugShaders 花费时间 spend 2ms
+:tracker:compileDebugShaders UP-TO-DATE
+:tracker:compileDebugShaders 花费时间 spend 2ms
+:tracker:generateDebugAssets UP-TO-DATE
+:tracker:generateDebugAssets 花费时间 spend 0ms
+:tracker:packageDebugAssets UP-TO-DATE
+:tracker:packageDebugAssets 花费时间 spend 3ms
+:app:mergeDebugAssets UP-TO-DATE
+:app:mergeDebugAssets 花费时间 spend 9ms
+:app:transformClassesWithLazierTrackerForDebug
+==============myPluginTest transform enter==============
+XmlParser manifestFile: /Users/jacky/myWidget/selfProject/ClickHook/app/src/main/AndroidManifest.xml
+XmlParser packageName: com.example.jacky.clickhookdemo
+==============@targetPackages = [com.example.jacky.clickhookdemo]==============
+===============================
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d8679d2cebb7006c5018826e87a2222f/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-alpha1.aar/38c476a2612dc277ac659bca052ba749/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/21703ceddcb51e56a50d4ffa2cfed7a4/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/967bab71c5b18defe92cf4a07b58c9fd/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7c73f338e318998e621a00c62c0b0b3e/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/40e006b80c7ceec27b85b3361324a585/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/e662b7587407115720f7fb49eb33449e/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e35a27eb436c6f211be3b9e00028ca1c/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2fd30bd55c39b1142e18ba035a2fa6e9/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0525845a2ae20fd1bcd92991948dcaa6/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/d27d537cf97556785594cde813555719/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/3e86fe2c5065fe3b29aaa73155e103d7/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8b887dfd5034dd1e5beb08fef29fe8dc/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/085ddb778d87dba356f2bde9fa48fbb7/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ddf8e2927b2f77b3035c45b8de7c5a00/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/edb2bb47ee9f51bbe1796dca754bc51d/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/07dff51902cd5e1af3768ffde22fb9b2/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b6e329b6bde4fe1cb66e9f1bd7bf3e87/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8f884973d69f811670a915fa6af8bca3/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a5089eb3d2120b472c8996ca0a88625f/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/79782fd772c07ca7d65cffd5d020c11f/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1e03aa6a36d8f8581b5c746f31fdbd12/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2f6b56176b50ea0aef8b136e1d07a19d/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/af152cd047ceeec22087a0937fb5292d/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/6c9652de25b6bb8b70e9f2e0c81521d1/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f611f3bfc4eca80aa0c86453e04ee2cc/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b0e0823871a1bd462ca6ef262e28049e/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/30d227e7c5803a82da1780abca2daf00/jars/classes.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.8/aba3867820f46117ef0dfe760418b1bc0278894f/fastjson-1.2.8.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar
+项目包含的jar包：/Users/jacky/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+===============================
+项目包含的jar包：/Users/jacky/myWidget/selfProject/ClickHook/tracker/build/intermediates/intermediate-jars/debug/classes.jar
+项目包含的class文件夹：/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+===============================
+项目包含的class文件夹：/Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/kotlin-classes/debug
+===============================
+===============================
+========traverse=====/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39	/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+====start modifying com.example.jacky.clickhookdemo.MainActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/R$id	android/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_PRIVATE		ACC_FINAL		mPrivateTagKey	I	null	960000	
+* visitField *		ACC_PRIVATE		button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		button2	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		uiHandler	Landroid/os/Handler;	null	null	
+* visitField *		ACC_PRIVATE		sHookMethod	Ljava/lang/reflect/Method;	null	null	
+* visitField *		ACC_PRIVATE		sHookField	Ljava/lang/reflect/Field;	null	null	
+* visitField *		ACC_PRIVATE		ACC_FINAL		mInnerClickProxy	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#<init>
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onCreate
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131296284	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	setContentView	(I)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165218	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165219	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$1	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$1	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$2	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$2	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	getWindow	()Landroid/view/Window;	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/Window	getDecorView	()Landroid/view/View;	false	
+visitLdcInsn	16908290	
+visitMethodInsn	INVOKEVIRTUAL	android/view/View	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/view/ViewGroup	
+visitVarInsn	ASTORE	2	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	init	()Z	false	
+visitJumpInsn	IFEQ	L1447425878	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewGroup	getViewTreeObserver	()Landroid/view/ViewTreeObserver;	false	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$3	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$3	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewTreeObserver	addOnGlobalLayoutListener	(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V	false	
+visitLabel	L1447425878	
+visitFrame	1	[android/view/ViewGroup	null	null	]	1	0	[null	null	null	null	null	]	
+visitInsn	RETURN	
+visitMaxs	5	3	
+visitEnd
+* visitMethod *		ACC_PUBLIC		init	()Z	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#init
+* visitMethod *		ACC_PRIVATE		hookViews	(Landroid/view/View;I)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookViews
+* visitMethod *		ACC_PRIVATE		hookClickListener	(Landroid/view/View;IZ)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookClickListener
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$000
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$100
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$200	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/View;I)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$200
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$300	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/os/Handler;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$300
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#com/example/jacky/clickhookdemo/MainActivity
+====revisit modified com.example.jacky.clickhookdemo.MainActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/R$id	android/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_PRIVATE		ACC_FINAL		mPrivateTagKey	I	null	960000	
+* visitField *		ACC_PRIVATE		button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		button2	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		uiHandler	Landroid/os/Handler;	null	null	
+* visitField *		ACC_PRIVATE		sHookMethod	Ljava/lang/reflect/Method;	null	null	
+* visitField *		ACC_PRIVATE		sHookField	Ljava/lang/reflect/Field;	null	null	
+* visitField *		ACC_PRIVATE		ACC_FINAL		mInnerClickProxy	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#<init>
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onCreate
+* revisitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131296284	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	setContentView	(I)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165218	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165219	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$1	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$1	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$2	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$2	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	getWindow	()Landroid/view/Window;	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/Window	getDecorView	()Landroid/view/View;	false	
+visitLdcInsn	16908290	
+visitMethodInsn	INVOKEVIRTUAL	android/view/View	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/view/ViewGroup	
+visitVarInsn	ASTORE	2	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	init	()Z	false	
+visitJumpInsn	IFEQ	L1991784782	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewGroup	getViewTreeObserver	()Landroid/view/ViewTreeObserver;	false	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$3	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$3	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewTreeObserver	addOnGlobalLayoutListener	(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V	false	
+visitLabel	L1991784782	
+visitFrame	1	[android/view/ViewGroup	null	null	]	1	0	[null	null	null	null	null	]	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityCreate	(Ljava/lang/Object;Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	5	3	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#init
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookViews
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookClickListener
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$000
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$100
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$200
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$300
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onResume
+* revisitMethod *		ACC_PUBLIC		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onPause
+* revisitMethod *		ACC_PUBLIC		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#com/example/jacky/clickhookdemo/MainActivity
+====finish modifying com.example.jacky.clickhookdemo.MainActivity====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity.class
+====start modifying com.example.jacky.clickhookdemo.TestActivity====
+* visit *		ACC_ABSTRACT		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/TestActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#<init>
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onCreate
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitMethod *		ACC_PROTECTED		onResume	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onResume
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PROTECTED		onPause	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onPause
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#com/example/jacky/clickhookdemo/TestActivity
+====revisit modified com.example.jacky.clickhookdemo.TestActivity====
+* visit *		ACC_ABSTRACT		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/TestActivity	null	android/support/v7/app/AppCompatActivity	[]	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#<init>
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onCreate
+* revisitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityCreate	(Ljava/lang/Object;Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onResume
+* revisitMethod *		ACC_PROTECTED		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onPause
+* revisitMethod *		ACC_PROTECTED		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#com/example/jacky/clickhookdemo/TestActivity
+====finish modifying com.example.jacky.clickhookdemo.TestActivity====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoTestActivity.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$2====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$2	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$2	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..2	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$2====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$2	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$2	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..2	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$2====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$2.class
+====start modifying com.example.jacky.clickhookdemo.SecondActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondActivity	null	com/example/jacky/clickhookdemo/TestActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+* visitMethod *		ACC_PROTECTED		onPause	()V	null	null	
+* visitMethod *		ACC_PROTECTED		onResume	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondActivity	null	com/example/jacky/clickhookdemo/TestActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondActivity====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondActivity.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$4====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4	null	java/lang/Object	[com/example/jacky/clickhookdemo/IProxyClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	null	null	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$4====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4	null	java/lang/Object	[com/example/jacky/clickhookdemo/IProxyClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	null	null	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$4====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4.class
+====start modifying com.example.jacky.clickhookdemo.MyApp====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MyApp	null	android/app/Application	[]	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PUBLIC		onCreate	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MyApp====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MyApp	null	android/app/Application	[]	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MyApp====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMyApp.class
+====start modifying com.example.jacky.clickhookdemo.SecondFragment$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/SecondFragment	onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/SecondFragment;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/SecondFragment;Landroid/widget/Button;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/SecondFragment$1	val$button	Landroid/widget/Button;	
+visitLdcInsn	clicked...	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondFragment$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/SecondFragment	onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/SecondFragment;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/SecondFragment$1	val$button	Landroid/widget/Button;	
+visitLdcInsn	clicked...	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondFragment$1====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment$1.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$1	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..1	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$1	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..1	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$1====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$1.class
+====start modifying com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitField *		mBaseListener	Landroid/view/View$OnClickListener;	null	null	
+* visitMethod *		ACC_PUBLIC		<init>	(Landroid/view/View$OnClickListener;Lcom/example/jacky/clickhookdemo/IProxyClickListener;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitJumpInsn	IFNULL	L1837410359	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	com/example/jacky/clickhookdemo/IProxyClickListener	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	true	
+visitJumpInsn	IFEQ	L1837410359	
+visitInsn	ICONST_1	
+visitJumpInsn	GOTO	L2029813345	
+visitLabel	L1837410359	
+visitFrame	3	[null	null	null	]	0	0	[null	null	null	]	
+visitInsn	ICONST_0	
+visitLabel	L2029813345	
+visitFrame	4	[null	null	null	]	0	1	[1	null	null	]	
+visitVarInsn	ISTORE	2	
+visitVarInsn	ILOAD	2	
+visitJumpInsn	IFNE	L1429854285	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitJumpInsn	IFNULL	L1429854285	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	android/view/View$OnClickListener	onClick	(Landroid/view/View;)V	true	
+visitLabel	L1429854285	
+visitFrame	1	[1	null	null	]	1	0	[1	null	null	]	
+visitInsn	RETURN	
+visitMaxs	3	3	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitField *		mBaseListener	Landroid/view/View$OnClickListener;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitJumpInsn	IFNULL	L1504290772	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	com/example/jacky/clickhookdemo/IProxyClickListener	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	true	
+visitJumpInsn	IFEQ	L1504290772	
+visitInsn	ICONST_1	
+visitJumpInsn	GOTO	L295987654	
+visitLabel	L1504290772	
+visitFrame	3	[null	null	null	]	0	0	[null	null	null	]	
+visitInsn	ICONST_0	
+visitLabel	L295987654	
+visitFrame	4	[null	null	null	]	0	1	[1	null	null	]	
+visitVarInsn	ISTORE	2	
+visitVarInsn	ILOAD	2	
+visitJumpInsn	IFNE	L170922725	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitJumpInsn	IFNULL	L170922725	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	android/view/View$OnClickListener	onClick	(Landroid/view/View;)V	true	
+visitLabel	L170922725	
+visitFrame	1	[1	null	null	]	1	0	[1	null	null	]	
+visitInsn	RETURN	
+visitMaxs	3	3	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener$WrapClickListener.class
+====start modifying com.example.jacky.clickhookdemo.IProxyClickListener====
+* visit *		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		com/example/jacky/clickhookdemo/IProxyClickListener	null	java/lang/Object	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitMethod *		ACC_ABSTRACT		ACC_PUBLIC		onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.IProxyClickListener====
+* visit *		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		com/example/jacky/clickhookdemo/IProxyClickListener	null	java/lang/Object	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.IProxyClickListener====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$4$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4$1	null	java/lang/Object	[java/lang/Runnable	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity$4	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$v	Landroid/view/View;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$1	Lcom/example/jacky/clickhookdemo/MainActivity$4;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity$4;Landroid/view/View;)V	null	null	
+* visitMethod *		ACC_PUBLIC		run	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$4$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4$1	null	java/lang/Object	[java/lang/Runnable	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity$4	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$v	Landroid/view/View;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$1	Lcom/example/jacky/clickhookdemo/MainActivity$4;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$4$1====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4$1.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$3====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$3	null	java/lang/Object	[android/view/ViewTreeObserver$OnGlobalLayoutListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$rootView	Landroid/view/ViewGroup;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onGlobalLayout	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$3====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$3	null	java/lang/Object	[android/view/ViewTreeObserver$OnGlobalLayoutListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$rootView	Landroid/view/ViewGroup;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$3====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$3.class
+====start modifying com.example.jacky.clickhookdemo.SecondFragment====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment	null	android/support/v4/app/Fragment	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PUBLIC		onCreateView	(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	null	null	
+* visitMethod *		ACC_PUBLIC		onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onPause	()V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PUBLIC		onResume	()V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onResume	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PUBLIC		onDestroy	()V	null	null	
+* visitMethod *		ACC_PUBLIC		setUserVisibleHint	(Z)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	setUserVisibleHint	(Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondFragment====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment	null	android/support/v4/app/Fragment	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* revisitMethod *		ACC_PUBLIC		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		setUserVisibleHint	(Z)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	setUserVisibleHint	(Z)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	setFragmentUserVisibleHint	(Ljava/lang/Object;Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		onHiddenChanged	(Z)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onHiddenChanged	(Z)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentHiddenChanged	(Ljava/lang/Object;Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondFragment====
+modified class file dir : /Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MyApp.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/SecondFragment.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/SecondFragment$1.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity$1.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity$4.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/SecondActivity.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity$2.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/TestActivity.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity$4$1.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/IProxyClickListener.class
+/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/39/com/example/jacky/clickhookdemo/MainActivity$3.class
+========traverse=====/Users/jacky/myWidget/selfProject/ClickHook/app/build/intermediates/transforms/LazierTracker/debug/40	/Users/jacky/myWidget/selfProject/ClickHook/app/build/tmp/kotlin-classes/debug
+:app:transformClassesWithLazierTrackerForDebug 花费时间 spend 956ms
+:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug 花费时间 spend 44ms
+:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForDebug 花费时间 spend 5ms
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:mergeDebugJniLibFolders 花费时间 spend 3ms
+:tracker:compileDebugNdk NO-SOURCE
+:tracker:compileDebugNdk 花费时间 spend 2ms
+:tracker:mergeDebugJniLibFolders UP-TO-DATE
+:tracker:mergeDebugJniLibFolders 花费时间 spend 3ms
+:tracker:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:tracker:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 3ms
+:tracker:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:tracker:transformNativeLibsWithStripDebugSymbolForDebug 花费时间 spend 4ms
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug 花费时间 spend 2ms
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 613ms
+:app:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:app:transformNativeLibsWithStripDebugSymbolForDebug 花费时间 spend 3ms
+:app:checkDebugLibraries UP-TO-DATE
+:app:checkDebugLibraries 花费时间 spend 2ms
+:app:processDebugJavaRes NO-SOURCE
+:app:processDebugJavaRes 花费时间 spend 1ms
+:app:transformResourcesWithMergeJavaResForDebug
+:app:transformResourcesWithMergeJavaResForDebug 花费时间 spend 777ms
+:app:validateSigningDebug UP-TO-DATE
+:app:validateSigningDebug 花费时间 spend 1ms
+:app:packageDebug
+:app:packageDebug 花费时间 spend 333ms
+:app:assembleDebug
+:app:assembleDebug 花费时间 spend 0ms
+
+BUILD SUCCESSFUL in 14s
+47 actionable tasks: 5 executed, 42 up-to-date
+Task spend time:4087ms
+    300ms :app:checkDebugClasspath
+    157ms :app:mergeDebugResources
+    549ms :app:compileDebugKotlin
+    956ms :app:transformClassesWithLazierTrackerForDebug
+    613ms :app:transformNativeLibsWithMergeJniLibsForDebug
+    777ms :app:transformResourcesWithMergeJavaResForDebug
+    333ms :app:packageDebug
