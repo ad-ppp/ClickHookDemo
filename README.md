@@ -17,8 +17,8 @@
 ---
 1. 首先需要了解apk的打包流程
 ![](https://user-gold-cdn.xitu.io/2017/3/2/35a4d886bc51ec6be29456eadd4b1fd2.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-从上面的流程图，我们可以看出apk打包流程可以分为以下七步
 
+从上面的流程图，我们可以看出apk打包流程可以分为以下七步
 1. 通过aapt打包res资源文件，生成R.java、resources.arsc和res文件（二进制 & 非二进制如res/raw和pic保持原样）
 2. 处理.aidl文件，生成对应的Java接口文件
 3. 通过Java Compiler编译R.java、Java接口文件、Java源文件，生成.class文件
