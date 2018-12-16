@@ -1,0 +1,1117 @@
+:buildsrc:compileJava NO-SOURCE
+:buildsrc:compileGroovy UP-TO-DATE
+:buildsrc:processResources NO-SOURCE
+:buildsrc:classes UP-TO-DATE
+:buildsrc:jar
+:buildsrc:assemble
+:buildsrc:compileTestJava NO-SOURCE
+:buildsrc:compileTestGroovy NO-SOURCE
+:buildsrc:processTestResources NO-SOURCE
+:buildsrc:testClasses UP-TO-DATE
+:buildsrc:test NO-SOURCE
+:buildsrc:check UP-TO-DATE
+:buildsrc:build
+:applied LazierTracker
+plugin work dir:/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/LazierTracker
+
+watchTimeConsume enabled
+:app:checkDebugClasspath UP-TO-DATE
+:app:checkDebugClasspath 花费时间 spend 203ms
+:app:preBuild UP-TO-DATE
+:app:preBuild 花费时间 spend 0ms
+:tracker:preBuild UP-TO-DATE
+:tracker:preBuild 花费时间 spend 0ms
+:tracker:preDebugBuild UP-TO-DATE
+:tracker:preDebugBuild 花费时间 spend 0ms
+:tracker:checkDebugManifest UP-TO-DATE
+:tracker:checkDebugManifest 花费时间 spend 7ms
+:tracker:processDebugManifest UP-TO-DATE
+:tracker:processDebugManifest 花费时间 spend 23ms
+:app:preDebugBuild UP-TO-DATE
+:app:preDebugBuild 花费时间 spend 19ms
+:tracker:compileDebugAidl NO-SOURCE
+:tracker:compileDebugAidl 花费时间 spend 5ms
+:app:compileDebugAidl NO-SOURCE
+:app:compileDebugAidl 花费时间 spend 1ms
+:tracker:packageDebugRenderscript NO-SOURCE
+:tracker:packageDebugRenderscript 花费时间 spend 1ms
+:app:compileDebugRenderscript UP-TO-DATE
+:app:compileDebugRenderscript 花费时间 spend 15ms
+:app:checkDebugManifest
+:app:checkDebugManifest 花费时间 spend 3ms
+:app:generateDebugBuildConfig
+:app:generateDebugBuildConfig 花费时间 spend 17ms
+:app:mainApkListPersistenceDebug
+:app:mainApkListPersistenceDebug 花费时间 spend 16ms
+:app:generateDebugResValues
+:app:generateDebugResValues 花费时间 spend 2ms
+:app:generateDebugResources
+:app:generateDebugResources 花费时间 spend 0ms
+:tracker:compileDebugRenderscript
+:tracker:compileDebugRenderscript 花费时间 spend 26ms
+:tracker:generateDebugResValues
+:tracker:generateDebugResValues 花费时间 spend 3ms
+:tracker:generateDebugResources
+:tracker:generateDebugResources 花费时间 spend 0ms
+:tracker:packageDebugResources
+:tracker:packageDebugResources 花费时间 spend 207ms
+:app:mergeDebugResources
+:app:mergeDebugResources 花费时间 spend 2279ms
+:app:createDebugCompatibleScreenManifests
+:app:createDebugCompatibleScreenManifests 花费时间 spend 7ms
+:app:processDebugManifest
+:app:processDebugManifest 花费时间 spend 248ms
+:app:splitsDiscoveryTaskDebug
+:app:splitsDiscoveryTaskDebug 花费时间 spend 17ms
+:tracker:generateDebugRFile
+:tracker:generateDebugRFile 花费时间 spend 394ms
+:app:processDebugResources
+:app:processDebugResources 花费时间 spend 698ms
+:tracker:generateDebugBuildConfig
+:tracker:generateDebugBuildConfig 花费时间 spend 6ms
+:tracker:prepareLintJar
+:tracker:prepareLintJar 花费时间 spend 2ms
+:tracker:generateDebugSources
+:tracker:generateDebugSources 花费时间 spend 1ms
+:tracker:javaPreCompileDebug
+:tracker:javaPreCompileDebug 花费时间 spend 15ms
+:tracker:compileDebugJavaWithJavac
+:tracker:compileDebugJavaWithJavac 花费时间 spend 696ms
+:tracker:processDebugJavaRes NO-SOURCE
+:tracker:processDebugJavaRes 花费时间 spend 1ms
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug 花费时间 spend 54ms
+:app:compileDebugKotlin
+:app:compileDebugKotlin 花费时间 spend 223ms
+:app:prepareLintJar
+:app:prepareLintJar 花费时间 spend 3ms
+:app:generateDebugSources
+:app:generateDebugSources 花费时间 spend 0ms
+:app:javaPreCompileDebug
+:app:javaPreCompileDebug 花费时间 spend 12ms
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac 花费时间 spend 1012ms
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugNdk 花费时间 spend 1ms
+:app:compileDebugSources
+:app:compileDebugSources 花费时间 spend 0ms
+:app:mergeDebugShaders
+:app:mergeDebugShaders 花费时间 spend 12ms
+:app:compileDebugShaders
+:app:compileDebugShaders 花费时间 spend 8ms
+:app:generateDebugAssets
+:app:generateDebugAssets 花费时间 spend 0ms
+:tracker:mergeDebugShaders
+:tracker:mergeDebugShaders 花费时间 spend 6ms
+:tracker:compileDebugShaders
+:tracker:compileDebugShaders 花费时间 spend 2ms
+:tracker:generateDebugAssets
+:tracker:generateDebugAssets 花费时间 spend 0ms
+:tracker:packageDebugAssets
+:tracker:packageDebugAssets 花费时间 spend 5ms
+:app:mergeDebugAssets
+:app:mergeDebugAssets 花费时间 spend 33ms
+:app:transformClassesWithLazierTrackerForDebug
+==============myPluginTest transform enter==============
+XmlParser manifestFile: /Users/jackyalice/myWidget/github/ClickHookDemo/app/src/main/AndroidManifest.xml
+XmlParser packageName: com.example.jacky.clickhookdemo
+==============@targetPackages = [com.example.jacky.clickhookdemo]==============
+===============================
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/698f586a783d1cc28b8d12a3acda8ac3/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-alpha1.aar/deb95fe1fde1fed79afe8724e020c93d/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/aff6579c888dcb663532049f35233d3c/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/90d615ab219cd8b98988eeea66f7a5a6/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d6345d9978d62c7773d7fa23d02fc34e/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8496eb75728e118f3cf368b6658c6077/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/578df8c6dc2767915d37ec70cec365e1/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/a77e5159d77a3fa088daaee4f4c774b2/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/76399fc0dd99c68ac0d3bcedb01c1091/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/552f56d8b4b54a91d501c45ae2d42bdf/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8d52067b292019c709b2d084f1166b00/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/3494d503310f9c654f2aa502b65f61c5/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/781ebfffa5f8d985b782ce7ee704d703/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/42fcbc3e2afef0bfedf7391829427297/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ef9d2bec51fdf05047a339e743c926c7/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/48bdd7743f8233e4100263c809f89c2f/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5838d23d44fc9e463d67ba69fdf7d6c/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/8e46abd8ac246d228bd500a767cb3aaf/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/00c53dddc20ccda7e89e1ec7d95bd9f0/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/7b878900957b9ef6338e0297cc4c8311/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/636cff557c7fe6efc6027b5976fbedb5/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/69872c0211c6100df57d43b5f21b1261/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/305e2bec1b3431d142c621fc8f6e5c2f/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/309a7559e8a1e90967c9c2b9fd7001b7/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1dcef701c3d831d9911c35a5eaadd235/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7e8046b53de622bb33644803b2d08db5/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce788826a6e5148c87c346ce30b2eb60/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/23c511c6a963635d5c166e6bbd86ff25/jars/classes.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.8/aba3867820f46117ef0dfe760418b1bc0278894f/fastjson-1.2.8.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar
+项目包含的jar包：/Users/jackyalice/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+===============================
+项目包含的jar包：/Users/jackyalice/myWidget/github/ClickHookDemo/tracker/build/intermediates/intermediate-jars/debug/classes.jar
+项目包含的class文件夹：/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+===============================
+项目包含的class文件夹：/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/kotlin-classes/debug
+===============================
+===============================
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/versionedparcelable/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$bool.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$bool.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$anim.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/interpolator/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/documentfile/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/print/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/localbroadcastmanager/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/cursoradapter/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/arch/core/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/arch/lifecycle/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/arch/lifecycle/viewmodel/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/arch/lifecycle/livedata/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/arch/lifecycle/livedata/core/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/R$id	android/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_PRIVATE		ACC_FINAL		mPrivateTagKey	I	null	960000	
+* visitField *		ACC_PRIVATE		button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		button2	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		uiHandler	Landroid/os/Handler;	null	null	
+* visitField *		ACC_PRIVATE		sHookMethod	Ljava/lang/reflect/Method;	null	null	
+* visitField *		ACC_PRIVATE		sHookField	Ljava/lang/reflect/Field;	null	null	
+* visitField *		ACC_PRIVATE		ACC_FINAL		mInnerClickProxy	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#<init>
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onCreate
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131296284	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	setContentView	(I)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165218	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165219	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$1	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$1	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$2	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$2	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	getWindow	()Landroid/view/Window;	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/Window	getDecorView	()Landroid/view/View;	false	
+visitLdcInsn	16908290	
+visitMethodInsn	INVOKEVIRTUAL	android/view/View	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/view/ViewGroup	
+visitVarInsn	ASTORE	2	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	init	()Z	false	
+visitJumpInsn	IFEQ	L1449966580	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewGroup	getViewTreeObserver	()Landroid/view/ViewTreeObserver;	false	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$3	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$3	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewTreeObserver	addOnGlobalLayoutListener	(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V	false	
+visitLabel	L1449966580	
+visitFrame	1	[android/view/ViewGroup	null	null	]	1	0	[null	null	null	null	null	]	
+visitInsn	RETURN	
+visitMaxs	5	3	
+visitEnd
+* visitMethod *		ACC_PUBLIC		init	()Z	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#init
+* visitMethod *		ACC_PRIVATE		hookViews	(Landroid/view/View;I)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookViews
+* visitMethod *		ACC_PRIVATE		hookClickListener	(Landroid/view/View;IZ)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookClickListener
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$000
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$100
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$200	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/View;I)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$200
+* visitMethod *		ACC_SYNTHETIC		ACC_STATIC		access$300	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/os/Handler;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$300
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#com/example/jacky/clickhookdemo/MainActivity
+====revisit modified com.example.jacky.clickhookdemo.MainActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/R$id	android/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_PRIVATE		ACC_FINAL		mPrivateTagKey	I	null	960000	
+* visitField *		ACC_PRIVATE		button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		button2	Landroid/widget/Button;	null	null	
+* visitField *		ACC_PRIVATE		uiHandler	Landroid/os/Handler;	null	null	
+* visitField *		ACC_PRIVATE		sHookMethod	Ljava/lang/reflect/Method;	null	null	
+* visitField *		ACC_PRIVATE		sHookField	Ljava/lang/reflect/Field;	null	null	
+* visitField *		ACC_PRIVATE		ACC_FINAL		mInnerClickProxy	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#<init>
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onCreate
+* revisitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131296284	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	setContentView	(I)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165218	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	0	
+visitLdcInsn	2131165219	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/widget/Button	
+visitFieldInsn	PUTFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$1	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$1	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity	button2	Landroid/widget/Button;	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$2	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$2	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setOnClickListener	(Landroid/view/View$OnClickListener;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	getWindow	()Landroid/view/Window;	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/Window	getDecorView	()Landroid/view/View;	false	
+visitLdcInsn	16908290	
+visitMethodInsn	INVOKEVIRTUAL	android/view/View	findViewById	(I)Landroid/view/View;	false	
+visitTypeInsn	CHECKCAST	android/view/ViewGroup	
+visitVarInsn	ASTORE	2	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKEVIRTUAL	com/example/jacky/clickhookdemo/MainActivity	init	()Z	false	
+visitJumpInsn	IFEQ	L1044442510	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewGroup	getViewTreeObserver	()Landroid/view/ViewTreeObserver;	false	
+visitTypeInsn	NEW	com/example/jacky/clickhookdemo/MainActivity$3	
+visitInsn	DUP	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	2	
+visitMethodInsn	INVOKESPECIAL	com/example/jacky/clickhookdemo/MainActivity$3	<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	false	
+visitMethodInsn	INVOKEVIRTUAL	android/view/ViewTreeObserver	addOnGlobalLayoutListener	(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V	false	
+visitLabel	L1044442510	
+visitFrame	1	[android/view/ViewGroup	null	null	]	1	0	[null	null	null	null	null	]	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityCreate	(Ljava/lang/Object;Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	5	3	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#init
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookViews
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#hookClickListener
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$000
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$100
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$200
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#access$300
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onResume
+* revisitMethod *		ACC_PUBLIC		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#onPause
+* revisitMethod *		ACC_PUBLIC		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/MainActivity#com/example/jacky/clickhookdemo/MainActivity
+====finish modifying com.example.jacky.clickhookdemo.MainActivity====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$bool.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$mipmap.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/TestActivity.class
+====start modifying com.example.jacky.clickhookdemo.TestActivity====
+* visit *		ACC_ABSTRACT		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/TestActivity	null	android/support/v7/app/AppCompatActivity	[]	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#<init>
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onCreate
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitMethod *		ACC_PROTECTED		onResume	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onResume
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PROTECTED		onPause	()V	null	null	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onPause
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#com/example/jacky/clickhookdemo/TestActivity
+====revisit modified com.example.jacky.clickhookdemo.TestActivity====
+* visit *		ACC_ABSTRACT		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/TestActivity	null	android/support/v7/app/AppCompatActivity	[]	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#<init>
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onCreate
+* revisitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onCreate	(Landroid/os/Bundle;)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityCreate	(Ljava/lang/Object;Landroid/os/Bundle;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onResume
+* revisitMethod *		ACC_PROTECTED		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#onPause
+* revisitMethod *		ACC_PROTECTED		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v7/app/AppCompatActivity	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onActivityPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitEnd *	
+====scanning activity===com/example/jacky/clickhookdemo/TestActivity#com/example/jacky/clickhookdemo/TestActivity
+====finish modifying com.example.jacky.clickhookdemo.TestActivity====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoTestActivity.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/BuildConfig.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity$2.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$2====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$2	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$2	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..2	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$2====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$2	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$2	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$2	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$100	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..2	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$2====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$2.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$anim.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/SecondActivity.class
+====start modifying com.example.jacky.clickhookdemo.SecondActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondActivity	null	com/example/jacky/clickhookdemo/TestActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PROTECTED		onCreate	(Landroid/os/Bundle;)V	null	null	
+* visitMethod *		ACC_PROTECTED		onPause	()V	null	null	
+* visitMethod *		ACC_PROTECTED		onResume	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondActivity====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondActivity	null	com/example/jacky/clickhookdemo/TestActivity	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondActivity====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondActivity.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity$4.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$4====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4	null	java/lang/Object	[com/example/jacky/clickhookdemo/IProxyClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	null	null	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$4====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4	null	java/lang/Object	[com/example/jacky/clickhookdemo/IProxyClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	null	null	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$4====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MyApp.class
+====start modifying com.example.jacky.clickhookdemo.MyApp====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MyApp	null	android/app/Application	[]	
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PUBLIC		onCreate	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MyApp====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/MyApp	null	android/app/Application	[]	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MyApp====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMyApp.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/SecondFragment$1.class
+====start modifying com.example.jacky.clickhookdemo.SecondFragment$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/SecondFragment	onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/SecondFragment;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/SecondFragment;Landroid/widget/Button;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/SecondFragment$1	val$button	Landroid/widget/Button;	
+visitLdcInsn	clicked...	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondFragment$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/SecondFragment	onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$button	Landroid/widget/Button;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/SecondFragment;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/SecondFragment$1	val$button	Landroid/widget/Button;	
+visitLdcInsn	clicked...	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondFragment$1====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment$1.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity$1.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$1	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..1	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$1	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$1	null	null		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/MainActivity$1	this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	
+visitMethodInsn	INVOKESTATIC	com/example/jacky/clickhookdemo/MainActivity	access$000	(Lcom/example/jacky/clickhookdemo/MainActivity;)Landroid/widget/Button;	false	
+visitLdcInsn	click..1	
+visitMethodInsn	INVOKEVIRTUAL	android/widget/Button	setText	(Ljava/lang/CharSequence;)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$1====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$1.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener.class
+====start modifying com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitField *		mBaseListener	Landroid/view/View$OnClickListener;	null	null	
+* visitMethod *		ACC_PUBLIC		<init>	(Landroid/view/View$OnClickListener;Lcom/example/jacky/clickhookdemo/IProxyClickListener;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitJumpInsn	IFNULL	L834017118	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	com/example/jacky/clickhookdemo/IProxyClickListener	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	true	
+visitJumpInsn	IFEQ	L834017118	
+visitInsn	ICONST_1	
+visitJumpInsn	GOTO	L1120492036	
+visitLabel	L834017118	
+visitFrame	3	[null	null	null	]	0	0	[null	null	null	]	
+visitInsn	ICONST_0	
+visitLabel	L1120492036	
+visitFrame	4	[null	null	null	]	0	1	[1	null	null	]	
+visitVarInsn	ISTORE	2	
+visitVarInsn	ILOAD	2	
+visitJumpInsn	IFNE	L204434042	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitJumpInsn	IFNULL	L204434042	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	android/view/View$OnClickListener	onClick	(Landroid/view/View;)V	true	
+visitLabel	L204434042	
+visitFrame	1	[1	null	null	]	1	0	[1	null	null	]	
+visitInsn	RETURN	
+visitMaxs	3	3	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	null	java/lang/Object	[android/view/View$OnClickListener	]	
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	null	null	
+* visitField *		mBaseListener	Landroid/view/View$OnClickListener;	null	null	
+* revisitMethod *		ACC_PUBLIC		onClick	(Landroid/view/View;)V	null	
+visitCode
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onClick	(Landroid/view/View;)V	false	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitJumpInsn	IFNULL	L745691762	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mProxyListener	Lcom/example/jacky/clickhookdemo/IProxyClickListener;	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	com/example/jacky/clickhookdemo/IProxyClickListener	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	true	
+visitJumpInsn	IFEQ	L745691762	
+visitInsn	ICONST_1	
+visitJumpInsn	GOTO	L618871938	
+visitLabel	L745691762	
+visitFrame	3	[null	null	null	]	0	0	[null	null	null	]	
+visitInsn	ICONST_0	
+visitLabel	L618871938	
+visitFrame	4	[null	null	null	]	0	1	[1	null	null	]	
+visitVarInsn	ISTORE	2	
+visitVarInsn	ILOAD	2	
+visitJumpInsn	IFNE	L1399385822	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitJumpInsn	IFNULL	L1399385822	
+visitVarInsn	ALOAD	0	
+visitFieldInsn	GETFIELD	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	mBaseListener	Landroid/view/View$OnClickListener;	
+visitVarInsn	ALOAD	1	
+visitMethodInsn	INVOKEINTERFACE	android/view/View$OnClickListener	onClick	(Landroid/view/View;)V	true	
+visitLabel	L1399385822	
+visitFrame	1	[1	null	null	]	1	0	[1	null	null	]	
+visitInsn	RETURN	
+visitMaxs	3	3	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.IProxyClickListener$WrapClickListener====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener$WrapClickListener.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/IProxyClickListener.class
+====start modifying com.example.jacky.clickhookdemo.IProxyClickListener====
+* visit *		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		com/example/jacky/clickhookdemo/IProxyClickListener	null	java/lang/Object	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitMethod *		ACC_ABSTRACT		ACC_PUBLIC		onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.IProxyClickListener====
+* visit *		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		com/example/jacky/clickhookdemo/IProxyClickListener	null	java/lang/Object	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.IProxyClickListener====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity$4$1.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$4$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4$1	null	java/lang/Object	[java/lang/Runnable	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity$4	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$v	Landroid/view/View;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$1	Lcom/example/jacky/clickhookdemo/MainActivity$4;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity$4;Landroid/view/View;)V	null	null	
+* visitMethod *		ACC_PUBLIC		run	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$4$1====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$4$1	null	java/lang/Object	[java/lang/Runnable	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity$4	onProxyClick	(Lcom/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener;Landroid/view/View;)Z	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$4$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener	com/example/jacky/clickhookdemo/IProxyClickListener	WrapClickListener		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$v	Landroid/view/View;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$1	Lcom/example/jacky/clickhookdemo/MainActivity$4;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$4$1====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4$1.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/MainActivity$3.class
+====start modifying com.example.jacky.clickhookdemo.MainActivity$3====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$3	null	java/lang/Object	[android/view/ViewTreeObserver$OnGlobalLayoutListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$rootView	Landroid/view/ViewGroup;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitMethod *		<init>	(Lcom/example/jacky/clickhookdemo/MainActivity;Landroid/view/ViewGroup;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onGlobalLayout	()V	null	null	
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.MainActivity$3====
+* visit *		ACC_SUPER		com/example/jacky/clickhookdemo/MainActivity$3	null	java/lang/Object	[android/view/ViewTreeObserver$OnGlobalLayoutListener	]	
+* visitOuterClass *	com/example/jacky/clickhookdemo/MainActivity	onCreate	(Landroid/os/Bundle;)V	
+* visitInnerClass *	com/example/jacky/clickhookdemo/MainActivity$3	null	null		
+* visitInnerClass *	android/view/ViewTreeObserver$OnGlobalLayoutListener	android/view/ViewTreeObserver	OnGlobalLayoutListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		val$rootView	Landroid/view/ViewGroup;	null	null	
+* visitField *		ACC_SYNTHETIC		ACC_FINAL		this$0	Lcom/example/jacky/clickhookdemo/MainActivity;	null	null	
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.MainActivity$3====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$3.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/R$drawable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/jacky/clickhookdemo/SecondFragment.class
+====start modifying com.example.jacky.clickhookdemo.SecondFragment====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment	null	android/support/v4/app/Fragment	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* visitMethod *		ACC_PUBLIC		<init>	()V	null	null	
+* visitMethod *		ACC_PUBLIC		onCreateView	(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	null	null	
+* visitMethod *		ACC_PUBLIC		onViewCreated	(Landroid/view/View;Landroid/os/Bundle;)V	null	null	
+* visitMethod *		ACC_PUBLIC		onPause	()V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PUBLIC		onResume	()V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onResume	()V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* visitMethod *		ACC_PUBLIC		onDestroy	()V	null	null	
+* visitMethod *		ACC_PUBLIC		setUserVisibleHint	(Z)V	null	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	setUserVisibleHint	(Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====revisit modified com.example.jacky.clickhookdemo.SecondFragment====
+* visit *		ACC_PUBLIC		ACC_SUPER		com/example/jacky/clickhookdemo/SecondFragment	null	android/support/v4/app/Fragment	[]	
+* visitInnerClass *	com/example/jacky/clickhookdemo/SecondFragment$1	null	null		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$layout	com/example/jacky/clickhookdemo/R	layout		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	com/example/jacky/clickhookdemo/R$id	com/example/jacky/clickhookdemo/R	id		ACC_PUBLIC		ACC_STATIC		ACC_FINAL		
+* visitInnerClass *	android/view/View$OnClickListener	android/view/View	OnClickListener		ACC_ABSTRACT		ACC_INTERFACE		ACC_PUBLIC		ACC_STATIC		
+* revisitMethod *		ACC_PUBLIC		onPause	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onPause	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentPause	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		onResume	()V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onResume	()V	false	
+visitVarInsn	ALOAD	0	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentResume	(Ljava/lang/Object;)V	false	
+visitInsn	RETURN	
+visitMaxs	1	1	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		setUserVisibleHint	(Z)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	setUserVisibleHint	(Z)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	setFragmentUserVisibleHint	(Ljava/lang/Object;Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* revisitMethod *		ACC_PUBLIC		onHiddenChanged	(Z)V	null	
+visitCode
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESPECIAL	android/support/v4/app/Fragment	onHiddenChanged	(Z)V	false	
+visitVarInsn	ALOAD	0	
+visitVarInsn	ILOAD	1	
+visitMethodInsn	INVOKESTATIC	com/codeless/tracker/PluginAgent	onFragmentHiddenChanged	(Ljava/lang/Object;Z)V	false	
+visitInsn	RETURN	
+visitMaxs	2	2	
+visitEnd
+* visitEnd *	
+====finish modifying com.example.jacky.clickhookdemo.SecondFragment====
+modified class file dir : /Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$bool.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$id.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$styleable.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$style.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$anim.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$string.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$color.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$dimen.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$integer.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$layout.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$attr.class
+========traverse=====classFile=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/codeless/tracker/R$drawable.class
+========traverse=====/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/transforms/LazierTracker/debug/39	/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+====scan to modified====key=/com/example/jacky/clickhookdemo/MyApp.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMyApp.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/SecondFragment.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/SecondFragment$1.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondFragment$1.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/IProxyClickListener$WrapClickListener.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener$WrapClickListener.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity$1.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$1.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity$4.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/SecondActivity.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoSecondActivity.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity$2.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$2.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/TestActivity.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoTestActivity.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity$4$1.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$4$1.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/IProxyClickListener.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoIProxyClickListener.class
+====scan to modified====key=/com/example/jacky/clickhookdemo/MainActivity$3.class,value=/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/transformClassesWithLazierTrackerForDebug/comexamplejackyclickhookdemoMainActivity$3.class
+========traverse=====/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/intermediates/transforms/LazierTracker/debug/40	/Users/jackyalice/myWidget/github/ClickHookDemo/app/build/tmp/kotlin-classes/debug
+:app:transformClassesWithLazierTrackerForDebug 花费时间 spend 1064ms
+:app:transformClassesWithDexBuilderForDebug
+:app:transformClassesWithDexBuilderForDebug 花费时间 spend 2214ms
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug 花费时间 spend 1980ms
+:app:mergeDebugJniLibFolders
+:app:mergeDebugJniLibFolders 花费时间 spend 4ms
+:tracker:compileDebugNdk NO-SOURCE
+:tracker:compileDebugNdk 花费时间 spend 1ms
+:tracker:mergeDebugJniLibFolders
+:tracker:mergeDebugJniLibFolders 花费时间 spend 5ms
+:tracker:transformNativeLibsWithMergeJniLibsForDebug
+:tracker:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 50ms
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug 花费时间 spend 3ms
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 498ms
+:app:checkDebugLibraries
+:app:checkDebugLibraries 花费时间 spend 2ms
+:app:processDebugJavaRes NO-SOURCE
+:app:processDebugJavaRes 花费时间 spend 1ms
+:app:transformResourcesWithMergeJavaResForDebug
+:app:transformResourcesWithMergeJavaResForDebug 花费时间 spend 1116ms
+:app:validateSigningDebug
+:app:validateSigningDebug 花费时间 spend 6ms
+:app:packageDebug
+:app:packageDebug 花费时间 spend 784ms
+:app:assembleDebug
+:app:assembleDebug 花费时间 spend 0ms
+
+BUILD SUCCESSFUL in 19s
+45 actionable tasks: 40 executed, 5 up-to-date
+Task spend time:14011ms
+    203ms :app:checkDebugClasspath
+    207ms :tracker:packageDebugResources
+   2279ms :app:mergeDebugResources
+    248ms :app:processDebugManifest
+    394ms :tracker:generateDebugRFile
+    698ms :app:processDebugResources
+    696ms :tracker:compileDebugJavaWithJavac
+     54ms :tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+    223ms :app:compileDebugKotlin
+   1012ms :app:compileDebugJavaWithJavac
+   1064ms :app:transformClassesWithLazierTrackerForDebug
+   2214ms :app:transformClassesWithDexBuilderForDebug
+   1980ms :app:transformDexArchiveWithDexMergerForDebug
+     50ms :tracker:transformNativeLibsWithMergeJniLibsForDebug
+    498ms :app:transformNativeLibsWithMergeJniLibsForDebug
+   1116ms :app:transformResourcesWithMergeJavaResForDebug
+    784ms :app:packageDebug

@@ -125,23 +125,26 @@ class InjectTransform extends Transform {
             input.directoryInputs.each { DirectoryInput directoryInput ->
                 File dest = outputProvider.getContentLocation(directoryInput.name, directoryInput.contentTypes, directoryInput.scopes, Format.DIRECTORY)
                 File dir = directoryInput.file
-                Log.info "========traverse=====${dest.getAbsolutePath()}\t${dir.getAbsolutePath()}"
                 if (dir.isDirectory()) {
                     HashMap<String, File> modifyMap = new HashMap<>()
 
                     dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.class/) {
                         File classFile ->
+                            Log.info "========traverse=====classFile=${classFile.absolutePath}"
                             File modified = modifyClassFile(dir, classFile, context.getTemporaryDir())
                             if (modified != null) {
                                 //key为相对路径
                                 modifyMap.put(classFile.absolutePath.replace(dir.absolutePath, ""), modified)
                             }
                     }
+                    Log.info "========traverse=====${dest.absolutePath}\t${dir.getAbsolutePath()}"
+
+
                     FileUtils.copyDirectory(directoryInput.file, dest)
                     modifyMap.entrySet().each {
                         Map.Entry<String, File> en ->
+                            Log.info "====scan to modified====key=${en.getKey()},value=${en.getValue().absolutePath}"
                             File target = new File(dest.absolutePath + en.getKey())
-                            Log.info(target.getAbsolutePath())
                             if (target.exists()) {
                                 target.delete()
                             }
