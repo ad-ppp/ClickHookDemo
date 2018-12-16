@@ -12,9 +12,12 @@
 优点：
     不存在效率问题，只会牺牲一些编译速度.
     而且可以对第三方Library注入字节码实现。
-    
-原理：
+
+
 ---
+
+原理：
+
 ##### 1. 首先需要了解apk的打包流程
 
 ![](https://user-gold-cdn.xitu.io/2017/3/2/35a4d886bc51ec6be29456eadd4b1fd2.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
