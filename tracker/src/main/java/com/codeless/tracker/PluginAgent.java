@@ -9,13 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Pair;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.CompoundButton;
-import android.widget.ExpandableListView;
-import android.widget.RadioGroup;
-import android.widget.RatingBar;
-import android.widget.SeekBar;
-
+import android.widget.*;
 import com.codeless.tracker.utils.PathUtil;
 import com.codeless.tracker.utils.StringEncrypt;
 
@@ -139,6 +133,11 @@ public class PluginAgent {
     }
 
     public static void onFragmentPause(Object obj) {
+        removeAliveFragment(obj);
+    }
+
+    //just to test asm bytecode
+    public static void onFragmentPause(Object obj, Object object) {
         removeAliveFragment(obj);
     }
 

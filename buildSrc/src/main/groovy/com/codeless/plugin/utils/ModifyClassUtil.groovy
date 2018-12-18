@@ -194,7 +194,10 @@ class ModifyClassUtil {
                             @Override
                             void visitCode() {
                                 super.visitCode()
-                                visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell.agentName, methodCell.agentDesc, methodCell.paramsStart, methodCell.paramsCount, methodCell.opcodes)
+                                visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC,
+                                        ReWriterConfig.sAgentClassName, methodCell.agentName,
+                                        methodCell.agentDesc, methodCell.paramsStart,
+                                        methodCell.paramsCount, methodCell.opcodes)
                             }
                         }
                     } catch (Exception e) {
