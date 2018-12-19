@@ -74,8 +74,8 @@ class ModifyClassUtil {
      * @param paramOpcodes 参数类型对应的ASM指令
      *
      */
-    private
-    static void visitMethodWithLoadedParams(MethodVisitor methodVisitor, int opcode, String owner, String methodName, String methodDesc, int start, int count, List<Integer> paramOpcodes) {
+    private static void visitMethodWithLoadedParams(MethodVisitor methodVisitor, int opcode, String owner,
+                                                    String methodName, String methodDesc, int start, int count, List<Integer> paramOpcodes) {
         for (int i = start; i < start + count; i++) {
             methodVisitor.visitVarInsn(paramOpcodes[i - start], i)
         }
@@ -231,9 +231,9 @@ class ModifyClassUtil {
                                 if (opcode == Opcodes.RETURN) { //在返回之前安插代码
                                     visitMethodWithLoadedParams(methodVisitor, Opcodes.INVOKESTATIC, ReWriterConfig.sAgentClassName, methodCell2.agentName, methodCell2.agentDesc, methodCell2.paramsStart, methodCell2.paramsCount, methodCell2.opcodes)
                                 }
+
                                 super.visitInsn(opcode)
                             }
-
                         }
                     } catch (Exception e) {
                         e.printStackTrace()

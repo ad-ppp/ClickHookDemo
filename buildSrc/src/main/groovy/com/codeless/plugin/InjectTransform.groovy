@@ -56,7 +56,7 @@ class InjectTransform extends Transform {
             boolean isIncremental) throws IOException, TransformException, InterruptedException {
         Log.info "==============${project.codelessConfig.pluginName + ' '}transform enter=============="
         android = project.extensions.getByType(AppExtension)
-        
+
         String appPackageName = getAppPackageName()
         if (appPackageName != null) {
             targetPackages.add(appPackageName)
@@ -138,7 +138,6 @@ class InjectTransform extends Transform {
                             }
                     }
                     Log.info "========traverse=====${dest.absolutePath}\t${dir.getAbsolutePath()}"
-
 
                     FileUtils.copyDirectory(directoryInput.file, dest)
                     modifyMap.entrySet().each {

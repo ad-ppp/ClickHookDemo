@@ -47,11 +47,17 @@ android.enableD8.desugaring=false
 [**desugar**](https://developer.android.com/studio/write/java8-support?hl=zh-cn)
 The desugar step is executed normally after javac to optimize the bytecode. Enabling desugaring in D8 will remove that step entirely, and execute desugar as part of D8, making it faster and more optimized.
 
+##### 4. [To many file open 限制](https://superuser.com/questions/433746/is-there-a-fix-for-the-too-many-open-files-in-system-error-on-os-x-10-7-1/443168#443168)
+
+
 ##### 积累
 1. [Class#defineClass](https://paper.seebug.org/572/)
+2. 如果需要理解asm解析class的机制需要了解class相关的结构。相关链接可以参考：
+    A. [掘金-JVM-TAG](https://juejin.im/tag/JVM)
+        a. [Java Class文件结构实例分析（上）](https://juejin.im/post/5bc361fce51d450e3d2d2ede)
 
     
-##### tools:
+##### Tools:
 **1. [plugin-ASM bytecode outLine](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)**
 - [AMS-bytecode 工具操作字节码介绍](https://plugins.jetbrains.com/plugin/5918-asm-bytecode-outline)
 
