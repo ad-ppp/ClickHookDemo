@@ -1,0 +1,320 @@
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy
+:buildSrc:processResources NO-SOURCE
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:applied 
+
+watchTimeConsume :false
+enableTransform :false
+is application =true
+property, key = parent,value = root project 'ClickHook'
+property, key = classLoaderScope,value = org.gradle.api.internal.initialization.DefaultClassLoaderScope@4771d733
+property, key = configurations,value = [configuration ':app:androidApis', configuration ':app:androidTestAnnotationProcessor', configuration ':app:androidTestApi', configuration ':app:androidTestApiDependenciesMetadata', configuration ':app:androidTestApk', configuration ':app:androidTestCompile', configuration ':app:androidTestCompileOnly', configuration ':app:androidTestCompileOnlyDependenciesMetadata', configuration ':app:androidTestDebugAnnotationProcessor', configuration ':app:androidTestDebugApi', configuration ':app:androidTestDebugApiDependenciesMetadata', configuration ':app:androidTestDebugApk', configuration ':app:androidTestDebugCompile', configuration ':app:androidTestDebugCompileOnly', configuration ':app:androidTestDebugCompileOnlyDependenciesMetadata', configuration ':app:androidTestDebugImplementation', configuration ':app:androidTestDebugImplementationDependenciesMetadata', configuration ':app:androidTestDebugProvided', configuration ':app:androidTestDebugRuntimeOnly', configuration ':app:androidTestDebugRuntimeOnlyDependenciesMetadata', configuration ':app:androidTestDebugWearApp', configuration ':app:androidTestImplementation', configuration ':app:androidTestImplementationDependenciesMetadata', configuration ':app:androidTestProvided', configuration ':app:androidTestRuntimeOnly', configuration ':app:androidTestRuntimeOnlyDependenciesMetadata', configuration ':app:androidTestUtil', configuration ':app:androidTestWearApp', configuration ':app:annotationProcessor', configuration ':app:api', configuration ':app:apiDependenciesMetadata', configuration ':app:apk', configuration ':app:archives', configuration ':app:compile', configuration ':app:compileOnly', configuration ':app:compileOnlyDependenciesMetadata', configuration ':app:debugAnnotationProcessor', configuration ':app:debugApi', configuration ':app:debugApiDependenciesMetadata', configuration ':app:debugApk', configuration ':app:debugCompile', configuration ':app:debugCompileOnly', configuration ':app:debugCompileOnlyDependenciesMetadata', configuration ':app:debugImplementation', configuration ':app:debugImplementationDependenciesMetadata', configuration ':app:debugProvided', configuration ':app:debugRuntimeOnly', configuration ':app:debugRuntimeOnlyDependenciesMetadata', configuration ':app:debugWearApp', configuration ':app:default', configuration ':app:implementation', configuration ':app:implementationDependenciesMetadata', configuration ':app:kapt', configuration ':app:kaptAndroidTest', configuration ':app:kaptAndroidTestDebug', configuration ':app:kaptDebug', configuration ':app:kaptRelease', configuration ':app:kaptTest', configuration ':app:kaptTestDebug', configuration ':app:kaptTestRelease', configuration ':app:kotlinCompilerClasspath', configuration ':app:kotlinCompilerPluginClasspath', configuration ':app:lintChecks', configuration ':app:lintClassPath', configuration ':app:provided', configuration ':app:releaseAnnotationProcessor', configuration ':app:releaseApi', configuration ':app:releaseApiDependenciesMetadata', configuration ':app:releaseApk', configuration ':app:releaseCompile', configuration ':app:releaseCompileOnly', configuration ':app:releaseCompileOnlyDependenciesMetadata', configuration ':app:releaseImplementation', configuration ':app:releaseImplementationDependenciesMetadata', configuration ':app:releaseProvided', configuration ':app:releaseRuntimeOnly', configuration ':app:releaseRuntimeOnlyDependenciesMetadata', configuration ':app:releaseWearApp', configuration ':app:runtimeOnly', configuration ':app:runtimeOnlyDependenciesMetadata', configuration ':app:testAnnotationProcessor', configuration ':app:testApi', configuration ':app:testApiDependenciesMetadata', configuration ':app:testApk', configuration ':app:testCompile', configuration ':app:testCompileOnly', configuration ':app:testCompileOnlyDependenciesMetadata', configuration ':app:testDebugAnnotationProcessor', configuration ':app:testDebugApi', configuration ':app:testDebugApiDependenciesMetadata', configuration ':app:testDebugApk', configuration ':app:testDebugCompile', configuration ':app:testDebugCompileOnly', configuration ':app:testDebugCompileOnlyDependenciesMetadata', configuration ':app:testDebugImplementation', configuration ':app:testDebugImplementationDependenciesMetadata', configuration ':app:testDebugProvided', configuration ':app:testDebugRuntimeOnly', configuration ':app:testDebugRuntimeOnlyDependenciesMetadata', configuration ':app:testDebugWearApp', configuration ':app:testImplementation', configuration ':app:testImplementationDependenciesMetadata', configuration ':app:testProvided', configuration ':app:testReleaseAnnotationProcessor', configuration ':app:testReleaseApi', configuration ':app:testReleaseApiDependenciesMetadata', configuration ':app:testReleaseApk', configuration ':app:testReleaseCompile', configuration ':app:testReleaseCompileOnly', configuration ':app:testReleaseCompileOnlyDependenciesMetadata', configuration ':app:testReleaseImplementation', configuration ':app:testReleaseImplementationDependenciesMetadata', configuration ':app:testReleaseProvided', configuration ':app:testReleaseRuntimeOnly', configuration ':app:testReleaseRuntimeOnlyDependenciesMetadata', configuration ':app:testReleaseWearApp', configuration ':app:testRuntimeOnly', configuration ':app:testRuntimeOnlyDependenciesMetadata', configuration ':app:testWearApp', configuration ':app:wearApp']
+property, key = plugins,value = [org.gradle.api.plugins.HelpTasksPlugin@3fe20416, com.android.build.gradle.api.AndroidBasePlugin@730c95bc, org.gradle.language.base.plugins.LifecycleBasePlugin@468b1e99, org.gradle.api.plugins.BasePlugin@37df73f8, org.gradle.api.plugins.ReportingBasePlugin@371ef661, org.gradle.platform.base.plugins.ComponentBasePlugin@721fc993, org.gradle.language.base.plugins.LanguageBasePlugin@32f2844f, org.gradle.platform.base.plugins.BinaryBasePlugin@22af76c3, org.gradle.api.plugins.JavaBasePlugin@7eae631f, com.android.build.gradle.AppPlugin@89464af, org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper@6d50dbb5, org.jetbrains.kotlin.gradle.internal.AndroidExtensionsSubpluginIndicator@422b801d]
+property, key = objects,value = org.gradle.api.internal.model.DefaultObjectFactory@7a5fdc8c
+property, key = logger,value = org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@5a5b1aee
+property, key = rootDir,value = /Users/jacky/myWidget/selfProject/ClickHook
+property, key = projectRegistry,value = org.gradle.api.internal.project.DefaultProjectRegistry@ae2890
+property, key = path,value = :app
+property, key = testResultsDirName,value = test-results
+property, key = targetCompatibility,value = 1.8
+property, key = kotlin_version,value = 1.2.71
+property, key = normalization,value = org.gradle.normalization.internal.DefaultInputNormalizationHandler_Decorated@149d9af7
+property, key = childProjects,value = [:]
+property, key = state,value = project state 'EXECUTING'
+property, key = serviceRegistryFactory,value = org.gradle.internal.service.scopes.ProjectScopeServices$4@5d9c1f18
+property, key = tasks,value = [task ':app:assemble', task ':app:assembleAndroidTest', task ':app:buildDependents', task ':app:buildNeeded', task ':app:bundle', task ':app:check', task ':app:cleanBuildCache', task ':app:compileLint', task ':app:connectedCheck', task ':app:consumeConfigAttr', task ':app:deviceCheck', task ':app:extractProguardFiles', task ':app:lint', task ':app:lintFix', task ':app:preBuild', task ':app:resolveConfigAttr', task ':app:sourceSets', task ':app:uninstallAll']
+property, key = ext,value = org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension@5923039b
+property, key = projectDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app
+property, key = projectEvaluationBroadcaster,value = ProjectEvaluationListener broadcast
+property, key = projectPath,value = :app
+property, key = module,value = org.gradle.api.internal.artifacts.ProjectBackedModule@d13458
+property, key = inheritedScope,value = org.gradle.api.internal.ExtensibleDynamicObject$InheritedDynamicObject@28b85a87
+property, key = deviceCheck,value = task ':app:deviceCheck'
+property, key = org.gradle.jvmargs,value = -Xmx1536m
+property, key = version,value = unspecified
+property, key = script,value = false
+property, key = dependencies,value = org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@500a2745
+property, key = lint,value = task ':app:lint'
+property, key = extensions,value = org.gradle.api.internal.plugins.DefaultConvention@6d539683
+property, key = kotlin.code.style,value = official
+property, key = modelRegistry,value = org.gradle.model.internal.registry.DefaultModelRegistry@2cad7f69
+property, key = projectEvaluator,value = org.gradle.configuration.project.LifecycleProjectEvaluator@46ab6419
+property, key = buildNeeded,value = task ':app:buildNeeded'
+property, key = cleanBuildCache,value = task ':app:cleanBuildCache'
+property, key = projectConfigurator,value = org.gradle.api.internal.project.BuildOperationCrossProjectConfigurator@479a4386
+property, key = archivesBaseName,value = app
+property, key = logging,value = org.gradle.internal.logging.services.DefaultLoggingManager@368c3278
+property, key = configurationActions,value = org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@711d55f7
+property, key = sourceCompatibility,value = 1.8
+property, key = status,value = integration
+property, key = subprojects,value = []
+property, key = components,value = []
+property, key = displayName,value = project ':app'
+property, key = parentIdentifier,value = root project 'ClickHook'
+property, key = antBuilderFactory,value = org.gradle.api.internal.project.DefaultAntBuilderFactory@6c0b6c61
+property, key = standardOutputCapture,value = org.gradle.internal.logging.services.DefaultLoggingManager@368c3278
+property, key = docsDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/docs
+property, key = defaultTasks,value = []
+property, key = bundle,value = task ':app:bundle'
+property, key = buildScriptSource,value = org.gradle.groovy.scripts.TextResourceScriptSource@79989415
+property, key = reportsDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/reports
+property, key = baseClassLoaderScope,value = org.gradle.api.internal.initialization.DefaultClassLoaderScope@2ed076ac
+property, key = services,value = ProjectScopeServices
+property, key = assemble,value = task ':app:assemble'
+property, key = enableInnerTransform,value = false
+property, key = gradle,value = build 'ClickHook'
+property, key = distsDirName,value = distributions
+property, key = buildFile,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build.gradle
+property, key = depth,value = 1
+property, key = docsDirName,value = docs
+property, key = connectedCheck,value = task ':app:connectedCheck'
+property, key = uninstallAll,value = task ':app:uninstallAll'
+property, key = assembleAndroidTest,value = task ':app:assembleAndroidTest'
+property, key = testResultsDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/test-results
+property, key = buildOutputs,value = []
+property, key = lintFix,value = task ':app:lintFix'
+property, key = buildDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build
+property, key = scriptHandlerFactory,value = org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@35792c6c
+property, key = deferredProjectConfiguration,value = org.gradle.api.internal.project.DeferredProjectConfiguration@22626c6
+property, key = project,value = project ':app'
+property, key = compileLint,value = task ':app:compileLint'
+property, key = codelessConfig,value = com.codeless.plugin.InjectPluginParams_Decorated@3fa322ab
+property, key = repositories,value = [org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@126b46e5, org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@6e8d1288]
+property, key = extractProguardFiles,value = task ':app:extractProguardFiles'
+property, key = scriptPluginFactory,value = org.gradle.configuration.ScriptPluginFactorySelector@5dae0989
+property, key = resourceLoader,value = org.gradle.internal.resource.transfer.DefaultUriTextResourceLoader@7bbedeed
+property, key = testReportDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/reports/tests
+property, key = consumeConfigAttr,value = task ':app:consumeConfigAttr'
+property, key = androidExtensions,value = org.jetbrains.kotlin.gradle.internal.AndroidExtensionsExtension_Decorated@33aae311
+property, key = group,value = ClickHook
+property, key = artifacts,value = org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@3535aebe
+property, key = INTERNAL__CHECKED_MINIMUM_PLUGIN_VERSIONS,value = true
+property, key = configurationTargetIdentifier,value = org.gradle.configuration.ConfigurationTargetIdentifier$1@187a1bd0
+property, key = check,value = task ':app:check'
+property, key = fileResolver,value = org.gradle.api.internal.file.BaseDirFileResolver@15bee784
+property, key = preBuild,value = task ':app:preBuild'
+property, key = name,value = app
+property, key = testReportDirName,value = tests
+property, key = buildscript,value = org.gradle.api.internal.initialization.DefaultScriptHandler@71682c49
+property, key = processOperations,value = org.gradle.api.internal.file.DefaultFileOperations@69302c84
+property, key = buildDependents,value = task ':app:buildDependents'
+property, key = asDynamicObject,value = DynamicObject for project ':app'
+property, key = android,value = com.android.build.gradle.internal.dsl.BaseAppModuleExtension_Decorated@215c0ee9
+property, key = identityPath,value = :app
+property, key = description,value = null
+property, key = sourceSets,value = []
+property, key = buildPath,value = :
+property, key = fileOperations,value = org.gradle.api.internal.file.DefaultFileOperations@69302c84
+property, key = pluginManager,value = org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@43bc4f81
+property, key = defaultArtifacts,value = org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@730629db
+property, key = class,value = class org.gradle.api.internal.project.DefaultProject_Decorated
+property, key = modelSchemaStore,value = org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@5d9015be
+property, key = reporting,value = org.gradle.api.reporting.ReportingExtension_Decorated@1b3a6f33
+property, key = convention,value = org.gradle.api.internal.plugins.DefaultConvention@6d539683
+property, key = allprojects,value = [project ':app']
+property, key = ant,value = org.gradle.api.internal.project.DefaultAntBuilder@5ad011fb
+property, key = kotlin,value = org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension_Decorated@7bb19d67
+property, key = resources,value = org.gradle.api.internal.resources.DefaultResourceHandler@393b3b3b
+property, key = android.enableD8,value = true
+property, key = layout,value = org.gradle.api.internal.file.DefaultProjectLayout@713088d8
+property, key = resolveConfigAttr,value = task ':app:resolveConfigAttr'
+property, key = libsDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/libs
+property, key = distsDir,value = /Users/jacky/myWidget/selfProject/ClickHook/app/build/distributions
+property, key = rootProject,value = root project 'ClickHook'
+property, key = properties,value = [parent:root project 'ClickHook', classLoaderScope:org.gradle.api.internal.initialization.DefaultClassLoaderScope@4771d733, configurations:[configuration ':app:androidApis', configuration ':app:androidTestAnnotationProcessor', configuration ':app:androidTestApi', configuration ':app:androidTestApiDependenciesMetadata', configuration ':app:androidTestApk', configuration ':app:androidTestCompile', configuration ':app:androidTestCompileOnly', configuration ':app:androidTestCompileOnlyDependenciesMetadata', configuration ':app:androidTestDebugAnnotationProcessor', configuration ':app:androidTestDebugApi', configuration ':app:androidTestDebugApiDependenciesMetadata', configuration ':app:androidTestDebugApk', configuration ':app:androidTestDebugCompile', configuration ':app:androidTestDebugCompileOnly', configuration ':app:androidTestDebugCompileOnlyDependenciesMetadata', configuration ':app:androidTestDebugImplementation', configuration ':app:androidTestDebugImplementationDependenciesMetadata', configuration ':app:androidTestDebugProvided', configuration ':app:androidTestDebugRuntimeOnly', configuration ':app:androidTestDebugRuntimeOnlyDependenciesMetadata', configuration ':app:androidTestDebugWearApp', configuration ':app:androidTestImplementation', configuration ':app:androidTestImplementationDependenciesMetadata', configuration ':app:androidTestProvided', configuration ':app:androidTestRuntimeOnly', configuration ':app:androidTestRuntimeOnlyDependenciesMetadata', configuration ':app:androidTestUtil', configuration ':app:androidTestWearApp', configuration ':app:annotationProcessor', configuration ':app:api', configuration ':app:apiDependenciesMetadata', configuration ':app:apk', configuration ':app:archives', configuration ':app:compile', configuration ':app:compileOnly', configuration ':app:compileOnlyDependenciesMetadata', configuration ':app:debugAnnotationProcessor', configuration ':app:debugApi', configuration ':app:debugApiDependenciesMetadata', configuration ':app:debugApk', configuration ':app:debugCompile', configuration ':app:debugCompileOnly', configuration ':app:debugCompileOnlyDependenciesMetadata', configuration ':app:debugImplementation', configuration ':app:debugImplementationDependenciesMetadata', configuration ':app:debugProvided', configuration ':app:debugRuntimeOnly', configuration ':app:debugRuntimeOnlyDependenciesMetadata', configuration ':app:debugWearApp', configuration ':app:default', configuration ':app:implementation', configuration ':app:implementationDependenciesMetadata', configuration ':app:kapt', configuration ':app:kaptAndroidTest', configuration ':app:kaptAndroidTestDebug', configuration ':app:kaptDebug', configuration ':app:kaptRelease', configuration ':app:kaptTest', configuration ':app:kaptTestDebug', configuration ':app:kaptTestRelease', configuration ':app:kotlinCompilerClasspath', configuration ':app:kotlinCompilerPluginClasspath', configuration ':app:lintChecks', configuration ':app:lintClassPath', configuration ':app:provided', configuration ':app:releaseAnnotationProcessor', configuration ':app:releaseApi', configuration ':app:releaseApiDependenciesMetadata', configuration ':app:releaseApk', configuration ':app:releaseCompile', configuration ':app:releaseCompileOnly', configuration ':app:releaseCompileOnlyDependenciesMetadata', configuration ':app:releaseImplementation', configuration ':app:releaseImplementationDependenciesMetadata', configuration ':app:releaseProvided', configuration ':app:releaseRuntimeOnly', configuration ':app:releaseRuntimeOnlyDependenciesMetadata', configuration ':app:releaseWearApp', configuration ':app:runtimeOnly', configuration ':app:runtimeOnlyDependenciesMetadata', configuration ':app:testAnnotationProcessor', configuration ':app:testApi', configuration ':app:testApiDependenciesMetadata', configuration ':app:testApk', configuration ':app:testCompile', configuration ':app:testCompileOnly', configuration ':app:testCompileOnlyDependenciesMetadata', configuration ':app:testDebugAnnotationProcessor', configuration ':app:testDebugApi', configuration ':app:testDebugApiDependenciesMetadata', configuration ':app:testDebugApk', configuration ':app:testDebugCompile', configuration ':app:testDebugCompileOnly', configuration ':app:testDebugCompileOnlyDependenciesMetadata', configuration ':app:testDebugImplementation', configuration ':app:testDebugImplementationDependenciesMetadata', configuration ':app:testDebugProvided', configuration ':app:testDebugRuntimeOnly', configuration ':app:testDebugRuntimeOnlyDependenciesMetadata', configuration ':app:testDebugWearApp', configuration ':app:testImplementation', configuration ':app:testImplementationDependenciesMetadata', configuration ':app:testProvided', configuration ':app:testReleaseAnnotationProcessor', configuration ':app:testReleaseApi', configuration ':app:testReleaseApiDependenciesMetadata', configuration ':app:testReleaseApk', configuration ':app:testReleaseCompile', configuration ':app:testReleaseCompileOnly', configuration ':app:testReleaseCompileOnlyDependenciesMetadata', configuration ':app:testReleaseImplementation', configuration ':app:testReleaseImplementationDependenciesMetadata', configuration ':app:testReleaseProvided', configuration ':app:testReleaseRuntimeOnly', configuration ':app:testReleaseRuntimeOnlyDependenciesMetadata', configuration ':app:testReleaseWearApp', configuration ':app:testRuntimeOnly', configuration ':app:testRuntimeOnlyDependenciesMetadata', configuration ':app:testWearApp', configuration ':app:wearApp'], plugins:[org.gradle.api.plugins.HelpTasksPlugin@3fe20416, com.android.build.gradle.api.AndroidBasePlugin@730c95bc, org.gradle.language.base.plugins.LifecycleBasePlugin@468b1e99, org.gradle.api.plugins.BasePlugin@37df73f8, org.gradle.api.plugins.ReportingBasePlugin@371ef661, org.gradle.platform.base.plugins.ComponentBasePlugin@721fc993, org.gradle.language.base.plugins.LanguageBasePlugin@32f2844f, org.gradle.platform.base.plugins.BinaryBasePlugin@22af76c3, org.gradle.api.plugins.JavaBasePlugin@7eae631f, com.android.build.gradle.AppPlugin@89464af, org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper@6d50dbb5, org.jetbrains.kotlin.gradle.internal.AndroidExtensionsSubpluginIndicator@422b801d], objects:org.gradle.api.internal.model.DefaultObjectFactory@7a5fdc8c, logger:org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@5a5b1aee, rootDir:/Users/jacky/myWidget/selfProject/ClickHook, projectRegistry:org.gradle.api.internal.project.DefaultProjectRegistry@ae2890, path::app, testResultsDirName:test-results, targetCompatibility:1.8, kotlin_version:1.2.71, normalization:org.gradle.normalization.internal.DefaultInputNormalizationHandler_Decorated@149d9af7, childProjects:[:], state:project state 'EXECUTING', serviceRegistryFactory:org.gradle.internal.service.scopes.ProjectScopeServices$4@5d9c1f18, tasks:[task ':app:assemble', task ':app:assembleAndroidTest', task ':app:buildDependents', task ':app:buildNeeded', task ':app:bundle', task ':app:check', task ':app:cleanBuildCache', task ':app:compileLint', task ':app:connectedCheck', task ':app:consumeConfigAttr', task ':app:deviceCheck', task ':app:extractProguardFiles', task ':app:lint', task ':app:lintFix', task ':app:preBuild', task ':app:resolveConfigAttr', task ':app:sourceSets', task ':app:uninstallAll'], ext:org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension@5923039b, projectDir:/Users/jacky/myWidget/selfProject/ClickHook/app, projectEvaluationBroadcaster:ProjectEvaluationListener broadcast, projectPath::app, module:org.gradle.api.internal.artifacts.ProjectBackedModule@d13458, inheritedScope:org.gradle.api.internal.ExtensibleDynamicObject$InheritedDynamicObject@28b85a87, deviceCheck:task ':app:deviceCheck', org.gradle.jvmargs:-Xmx1536m, version:unspecified, script:false, dependencies:org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@500a2745, lint:task ':app:lint', extensions:org.gradle.api.internal.plugins.DefaultConvention@6d539683, kotlin.code.style:official, modelRegistry:org.gradle.model.internal.registry.DefaultModelRegistry@2cad7f69, projectEvaluator:org.gradle.configuration.project.LifecycleProjectEvaluator@46ab6419, buildNeeded:task ':app:buildNeeded', cleanBuildCache:task ':app:cleanBuildCache', projectConfigurator:org.gradle.api.internal.project.BuildOperationCrossProjectConfigurator@479a4386, archivesBaseName:app, logging:org.gradle.internal.logging.services.DefaultLoggingManager@368c3278, configurationActions:org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@711d55f7, sourceCompatibility:1.8, status:integration, subprojects:[], components:[], displayName:project ':app', parentIdentifier:root project 'ClickHook', antBuilderFactory:org.gradle.api.internal.project.DefaultAntBuilderFactory@6c0b6c61, standardOutputCapture:org.gradle.internal.logging.services.DefaultLoggingManager@368c3278, docsDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/docs, defaultTasks:[], bundle:task ':app:bundle', buildScriptSource:org.gradle.groovy.scripts.TextResourceScriptSource@79989415, reportsDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/reports, baseClassLoaderScope:org.gradle.api.internal.initialization.DefaultClassLoaderScope@2ed076ac, services:ProjectScopeServices, assemble:task ':app:assemble', enableInnerTransform:false, gradle:build 'ClickHook', distsDirName:distributions, buildFile:/Users/jacky/myWidget/selfProject/ClickHook/app/build.gradle, depth:1, docsDirName:docs, connectedCheck:task ':app:connectedCheck', uninstallAll:task ':app:uninstallAll', assembleAndroidTest:task ':app:assembleAndroidTest', testResultsDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/test-results, buildOutputs:[], lintFix:task ':app:lintFix', buildDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build, scriptHandlerFactory:org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@35792c6c, deferredProjectConfiguration:org.gradle.api.internal.project.DeferredProjectConfiguration@22626c6, project:project ':app', compileLint:task ':app:compileLint', codelessConfig:com.codeless.plugin.InjectPluginParams_Decorated@3fa322ab, repositories:[org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@126b46e5, org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@6e8d1288], extractProguardFiles:task ':app:extractProguardFiles', scriptPluginFactory:org.gradle.configuration.ScriptPluginFactorySelector@5dae0989, resourceLoader:org.gradle.internal.resource.transfer.DefaultUriTextResourceLoader@7bbedeed, testReportDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/reports/tests, consumeConfigAttr:task ':app:consumeConfigAttr', androidExtensions:org.jetbrains.kotlin.gradle.internal.AndroidExtensionsExtension_Decorated@33aae311, group:ClickHook, artifacts:org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@3535aebe, INTERNAL__CHECKED_MINIMUM_PLUGIN_VERSIONS:true, configurationTargetIdentifier:org.gradle.configuration.ConfigurationTargetIdentifier$1@187a1bd0, check:task ':app:check', fileResolver:org.gradle.api.internal.file.BaseDirFileResolver@15bee784, preBuild:task ':app:preBuild', name:app, testReportDirName:tests, buildscript:org.gradle.api.internal.initialization.DefaultScriptHandler@71682c49, processOperations:org.gradle.api.internal.file.DefaultFileOperations@69302c84, buildDependents:task ':app:buildDependents', asDynamicObject:DynamicObject for project ':app', android:com.android.build.gradle.internal.dsl.BaseAppModuleExtension_Decorated@215c0ee9, identityPath::app, description:null, sourceSets:[], buildPath::, fileOperations:org.gradle.api.internal.file.DefaultFileOperations@69302c84, pluginManager:org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@43bc4f81, defaultArtifacts:org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@730629db, class:class org.gradle.api.internal.project.DefaultProject_Decorated, modelSchemaStore:org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@5d9015be, reporting:org.gradle.api.reporting.ReportingExtension_Decorated@1b3a6f33, convention:org.gradle.api.internal.plugins.DefaultConvention@6d539683, allprojects:[project ':app'], ant:org.gradle.api.internal.project.DefaultAntBuilder@5ad011fb, kotlin:org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension_Decorated@7bb19d67, resources:org.gradle.api.internal.resources.DefaultResourceHandler@393b3b3b, android.enableD8:true, layout:org.gradle.api.internal.file.DefaultProjectLayout@713088d8, resolveConfigAttr:task ':app:resolveConfigAttr', libsDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/libs, distsDir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/distributions, rootProject:root project 'ClickHook', properties:(this Map), libsDirName:libs, providers:org.gradle.api.internal.provider.DefaultProviderFactory@25cd44f]
+property, key = libsDirName,value = libs
+property, key = providers,value = org.gradle.api.internal.provider.DefaultProviderFactory@25cd44f
+status = integration
+===enableInnerTransform===false
+plugin work dir:/Users/jacky/myWidget/selfProject/ClickHook/app/build/LazierTracker
+:clean UP-TO-DATE
+:clean 花费时间 spend 7ms
+:app:clean
+:app:clean 花费时间 spend 323ms
+:buildSrc:clean
+:buildSrc:clean 花费时间 spend 6ms
+:tracker:clean
+:tracker:clean 花费时间 spend 69ms
+:app:checkDebugClasspath
+:app:checkDebugClasspath 花费时间 spend 409ms
+:app:preBuild UP-TO-DATE
+:app:preBuild 花费时间 spend 1ms
+:tracker:preBuild UP-TO-DATE
+:tracker:preBuild 花费时间 spend 0ms
+:tracker:preDebugBuild UP-TO-DATE
+:tracker:preDebugBuild 花费时间 spend 0ms
+:tracker:checkDebugManifest
+:tracker:checkDebugManifest 花费时间 spend 1ms
+:tracker:processDebugManifest
+:tracker:processDebugManifest 花费时间 spend 67ms
+:app:preDebugBuild
+:app:preDebugBuild 花费时间 spend 51ms
+:tracker:compileDebugAidl NO-SOURCE
+:tracker:compileDebugAidl 花费时间 spend 0ms
+:app:compileDebugAidl NO-SOURCE
+:app:compileDebugAidl 花费时间 spend 1ms
+:tracker:packageDebugRenderscript NO-SOURCE
+:tracker:packageDebugRenderscript 花费时间 spend 1ms
+:app:compileDebugRenderscript
+:app:compileDebugRenderscript 花费时间 spend 22ms
+:app:checkDebugManifest
+:app:checkDebugManifest 花费时间 spend 2ms
+:app:generateDebugBuildConfig
+:app:generateDebugBuildConfig 花费时间 spend 8ms
+:app:mainApkListPersistenceDebug
+:app:mainApkListPersistenceDebug 花费时间 spend 5ms
+:app:generateDebugResValues
+:app:generateDebugResValues 花费时间 spend 3ms
+:app:generateDebugResources
+:app:generateDebugResources 花费时间 spend 0ms
+:tracker:compileDebugRenderscript
+:tracker:compileDebugRenderscript 花费时间 spend 8ms
+:tracker:generateDebugResValues
+:tracker:generateDebugResValues 花费时间 spend 1ms
+:tracker:generateDebugResources
+:tracker:generateDebugResources 花费时间 spend 0ms
+:tracker:packageDebugResources
+:tracker:packageDebugResources 花费时间 spend 125ms
+:app:mergeDebugResources
+:app:mergeDebugResources 花费时间 spend 815ms
+:app:createDebugCompatibleScreenManifests
+:app:createDebugCompatibleScreenManifests 花费时间 spend 4ms
+:app:processDebugManifest
+:app:processDebugManifest 花费时间 spend 68ms
+:app:splitsDiscoveryTaskDebug
+:app:splitsDiscoveryTaskDebug 花费时间 spend 11ms
+:tracker:generateDebugRFile
+:tracker:generateDebugRFile 花费时间 spend 247ms
+:app:processDebugResources
+:app:processDebugResources 花费时间 spend 896ms
+:tracker:generateDebugBuildConfig
+:tracker:generateDebugBuildConfig 花费时间 spend 2ms
+:tracker:prepareLintJar
+:tracker:prepareLintJar 花费时间 spend 1ms
+:tracker:generateDebugSources
+:tracker:generateDebugSources 花费时间 spend 0ms
+:tracker:javaPreCompileDebug
+:tracker:javaPreCompileDebug 花费时间 spend 7ms
+:tracker:compileDebugJavaWithJavac
+:tracker:compileDebugJavaWithJavac 花费时间 spend 272ms
+:tracker:processDebugJavaRes NO-SOURCE
+:tracker:processDebugJavaRes 花费时间 spend 1ms
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug 花费时间 spend 53ms
+:app:compileDebugKotlin
+:app:compileDebugKotlin 花费时间 spend 139ms
+:app:prepareLintJar
+:app:prepareLintJar 花费时间 spend 1ms
+:app:generateDebugSources
+:app:generateDebugSources 花费时间 spend 1ms
+:app:javaPreCompileDebug
+:app:javaPreCompileDebug 花费时间 spend 15ms
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac 花费时间 spend 362ms
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugNdk 花费时间 spend 0ms
+:app:compileDebugSources
+:app:compileDebugSources 花费时间 spend 0ms
+:app:mergeDebugShaders
+:app:mergeDebugShaders 花费时间 spend 15ms
+:app:compileDebugShaders
+:app:compileDebugShaders 花费时间 spend 4ms
+:app:generateDebugAssets
+:app:generateDebugAssets 花费时间 spend 0ms
+:tracker:mergeDebugShaders
+:tracker:mergeDebugShaders 花费时间 spend 3ms
+:tracker:compileDebugShaders
+:tracker:compileDebugShaders 花费时间 spend 2ms
+:tracker:generateDebugAssets
+:tracker:generateDebugAssets 花费时间 spend 0ms
+:tracker:packageDebugAssets
+:tracker:packageDebugAssets 花费时间 spend 5ms
+:app:mergeDebugAssets
+:app:mergeDebugAssets 花费时间 spend 24ms
+:app:transformClassesWithDexBuilderForDebug
+:app:transformClassesWithDexBuilderForDebug 花费时间 spend 9787ms
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug 花费时间 spend 1488ms
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug 花费时间 spend 1218ms
+:app:mergeDebugJniLibFolders
+:app:mergeDebugJniLibFolders 花费时间 spend 4ms
+:tracker:compileDebugNdk NO-SOURCE
+:tracker:compileDebugNdk 花费时间 spend 0ms
+:tracker:mergeDebugJniLibFolders
+:tracker:mergeDebugJniLibFolders 花费时间 spend 2ms
+:tracker:transformNativeLibsWithMergeJniLibsForDebug
+:tracker:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 41ms
+:tracker:transformNativeLibsWithStripDebugSymbolForDebug
+:tracker:transformNativeLibsWithStripDebugSymbolForDebug 花费时间 spend 3ms
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug 花费时间 spend 2ms
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug 花费时间 spend 470ms
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug 花费时间 spend 6ms
+:app:checkDebugLibraries
+:app:checkDebugLibraries 花费时间 spend 2ms
+:app:processDebugJavaRes NO-SOURCE
+:app:processDebugJavaRes 花费时间 spend 0ms
+:app:transformResourcesWithMergeJavaResForDebug
+:app:transformResourcesWithMergeJavaResForDebug 花费时间 spend 669ms
+:app:validateSigningDebug
+:app:validateSigningDebug 花费时间 spend 6ms
+:app:packageDebug
+:app:packageDebug 花费时间 spend 559ms
+:app:assembleDebug
+:app:assembleDebug 花费时间 spend 0ms
+:tracker:extractDebugAnnotations
+:tracker:extractDebugAnnotations 花费时间 spend 42ms
+:tracker:mergeDebugConsumerProguardFiles
+:tracker:mergeDebugConsumerProguardFiles 花费时间 spend 1ms
+:tracker:transformResourcesWithMergeJavaResForDebug
+:tracker:transformResourcesWithMergeJavaResForDebug 花费时间 spend 27ms
+:tracker:transformClassesAndResourcesWithSyncLibJarsForDebug
+:tracker:transformClassesAndResourcesWithSyncLibJarsForDebug 花费时间 spend 24ms
+:tracker:transformNativeLibsWithSyncJniLibsForDebug
+:tracker:transformNativeLibsWithSyncJniLibsForDebug 花费时间 spend 2ms
+:tracker:bundleDebugAar
+:tracker:bundleDebugAar 花费时间 spend 12ms
+:tracker:compileDebugSources
+:tracker:compileDebugSources 花费时间 spend 0ms
+:tracker:assembleDebug
+:tracker:assembleDebug 花费时间 spend 0ms
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 27s
+57 actionable tasks: 56 executed, 1 up-to-date
+Task spend time:18423ms
+    323ms :app:clean
+     69ms :tracker:clean
+    409ms :app:checkDebugClasspath
+     67ms :tracker:processDebugManifest
+     51ms :app:preDebugBuild
+    125ms :tracker:packageDebugResources
+    815ms :app:mergeDebugResources
+     68ms :app:processDebugManifest
+    247ms :tracker:generateDebugRFile
+    896ms :app:processDebugResources
+    272ms :tracker:compileDebugJavaWithJavac
+     53ms :tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+    139ms :app:compileDebugKotlin
+    362ms :app:compileDebugJavaWithJavac
+   9787ms :app:transformClassesWithDexBuilderForDebug
+   1488ms :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+   1218ms :app:transformDexArchiveWithDexMergerForDebug
+    470ms :app:transformNativeLibsWithMergeJniLibsForDebug
+    669ms :app:transformResourcesWithMergeJavaResForDebug
+    559ms :app:packageDebug
