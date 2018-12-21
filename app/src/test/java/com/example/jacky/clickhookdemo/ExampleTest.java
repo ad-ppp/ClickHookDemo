@@ -5,13 +5,16 @@ import org.junit.Test;
 public class ExampleTest {
     @Test
     public void index_test() {
-        for (int i = 0; i < 500; i++) {
-            Util.println(String.valueOf(i) + "\t" + Util.getLetterIndex(i));
+        for (int i = 0; i < 10000; i++) {
+            Util.println(String.valueOf(i) + "\t\t" + Util.to26(i));
         }
+    }
 
-        Util.println(String.valueOf(26) + "\t" + Util.getLetterIndex(26));
-        Util.println(Util.toHex(917));
-        Util.suspend(20);
+    @Test
+    public void to26_test() {
+        for (int i = 0; i < 500; i++) {
+            Util.println(String.valueOf(i) + "\t" + Util.to26(i));
+        }
     }
 
     @Test

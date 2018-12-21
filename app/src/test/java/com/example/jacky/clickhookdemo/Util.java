@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Util {
 
+    private final int LETTER_LENGTH = 26;
+
     public static void println(Object o) {
         if (o instanceof String) {
             printlnInternal((String) o);
@@ -38,43 +40,6 @@ public class Util {
     }
 
 
-    private final int LETTER_LENGTH = 26;
-
-    /**
-     * 0->"A"
-     * 1->"B'
-     * ...
-     * 25->Z"
-     * 26->"AA"
-     * 27->"AB"
-     *
-     * @param position
-     * @return
-     */
-    public static String getLetterIndex(int position) {
-        if (position < 0) {
-            throw new IllegalArgumentException("position can not be smaller than zero");
-        }
-
-        StringBuilder stringBuilder = new StringBuilder();
-        int smaller;
-        int bigger = position;
-
-        while (bigger >= 0) {
-            smaller = bigger % 26;
-            bigger = bigger / 26;
-
-            stringBuilder.insert(0, String.valueOf((char) (smaller + 65)));
-
-            if (bigger == 0) {
-                break;
-            }
-        }
-
-        return stringBuilder.toString();
-    }
-
-
     public static String toHex(int position) {
         if (position < 0) {
             throw new IllegalArgumentException("position can not be smaller than zero");
@@ -89,6 +54,42 @@ public class Util {
             bigger = bigger / 16;
 
             stringBuilder.insert(0, String.valueOf((char) (smaller + 48)));
+
+            if (bigger == 0) {
+                break;
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
+    /**
+     * 0->"A"
+     * 1->"B'
+     * ...
+     * 25->Z"
+     * 26->"AA"
+     * 27->"AB"
+     *
+     * @param position
+     * @return
+     */
+    public static String to26(int position) {
+        if (position < 0) {
+            throw new IllegalArgumentException("position can not be smaller than zero");
+        }
+
+        position++;
+        StringBuilder stringBuilder = new StringBuilder();
+        int smaller;
+        int bigger = position;
+
+        while (bigger >= 0) {
+            bigger--;
+            smaller = bigger % 26;
+            bigger = bigger / 26;
+
+            stringBuilder.insert(0, String.valueOf((char) (smaller + 65)));
 
             if (bigger == 0) {
                 break;
