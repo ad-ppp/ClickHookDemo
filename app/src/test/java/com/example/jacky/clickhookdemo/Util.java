@@ -71,8 +71,8 @@ public class Util {
      * 26->"AA"
      * 27->"AB"
      *
-     * @param position
-     * @return
+     * @param position position
+     * @return letter index
      */
     public static String to26(int position) {
         if (position < 0) {

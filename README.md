@@ -19,11 +19,7 @@
 原理及用途可以参考：
 [公众号：一起玩转Android项目中的字节码](https://mp.weixin.qq.com/s/s4WgLFN0A-vO0ko0wi25mA)
 
-缺点： 
-1. 插桩字节码导致debug下，有点麻烦。
-
 ---
-
 
 参考： 
 - [异常简单的demo-任何自定义 gradle plugin](https://github.com/jacky1234/SimplePluginDemo)
