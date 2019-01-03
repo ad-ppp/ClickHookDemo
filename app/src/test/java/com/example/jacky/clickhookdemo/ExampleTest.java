@@ -40,4 +40,16 @@ public class ExampleTest {
             }
         }
     }
+
+    @Test
+    public void string_test() {
+        String s = "hello world";
+        Util.println(s);
+        change(s);
+        Util.println(s);
+    }
+
+    private void change(String s) {
+        s = "AAA";
+    }
 }
