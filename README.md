@@ -32,6 +32,8 @@
 遇到的问题：
 ##### 1. java sdk版本过高； Could not determine java version from '10.0.1'. 导致不能debug gradle plugin
     rm sdk高版本，安装低版本。
+
+    a. https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
     
 ##### 2. gradle not found
     brew install gradle
