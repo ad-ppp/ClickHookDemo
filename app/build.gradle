@@ -12,14 +12,40 @@ android {
         applicationId "com.example.jacky.clickhookdemo"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 105
+        versionName "1.0.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
     }
+
+    signingConfigs {
+        sign {
+            keyAlias ALIAS
+            keyPassword ALIAS_PASSWORD
+            storeFile file(KEYSTORE_PATH)
+            storePassword KEYSTORE_PASSWORD
+        }
+    }
+
     buildTypes {
-        release {
+        debug {
+            signingConfig signingConfigs.sign
+            jniDebuggable true
             minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled false
+            shrinkResources false
+        }
+
+        release {
+            signingConfig signingConfigs.sign
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -35,9 +61,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':tracker')
+
+    //测试plugin后，难定位问题。（mapping 处理的文件难定位到行）
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
 }
 
 // 直接引用buildSrc的插件类
+
 apply plugin: InjectPluginImpl
 
 codelessConfig {
