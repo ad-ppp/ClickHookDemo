@@ -35,6 +35,15 @@ class ReWriterConfig {
      */
     public final static HashMap<String, MethodCell> sInterfaceMethods = new HashMap<>()
     static {
+        //butterKnife 8.0+ 支持 -> ext onClickListener -> DebouncingOnClickListener
+        sInterfaceMethods.put('doClick(Landroid/view/View;)V', new MethodCell(
+                'doClick',
+                '(Landroid/view/View;)V',
+                'android/view/View$OnClickListener',
+                'onClick',
+                '(Landroid/view/View;)V',
+                1, 1,
+                [Opcodes.ALOAD]))
         sInterfaceMethods.put('onClick(Landroid/view/View;)V', new MethodCell(
                 'onClick',
                 '(Landroid/view/View;)V',

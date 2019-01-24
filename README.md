@@ -35,6 +35,11 @@
 
     a. https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
     
+##### 2. command not found ,etc['ls','vim'] and so on
+    重新安装 .oh-my-zsh。
+    a. rm -rf ~/.oh-my-zsh
+    b. open 'https://github.com/robbyrussell/oh-my-zsh' to find the way to install oh-my-zsh
+    
 ##### 2. gradle not found
     brew install gradle
 

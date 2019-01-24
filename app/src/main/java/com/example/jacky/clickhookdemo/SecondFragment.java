@@ -39,7 +39,7 @@ public class SecondFragment extends Fragment {
         });
 
         // throw new IllegalArgumentException("this is a test for crash");
-        Log.d("123", String.valueOf(1 / 0));
+        // Log.d("123", String.valueOf(1 / 0));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)

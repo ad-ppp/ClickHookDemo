@@ -11,6 +11,8 @@ import android.widget.Button;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.internal.DebouncingOnClickListener;
+import com.codeless.tracker.PluginAgent;
 
 public class ButterKnifeFragment extends Fragment {
     @BindView(R.id.button)
@@ -27,6 +29,12 @@ public class ButterKnifeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
+        button.setOnClickListener(new DebouncingOnClickListener() {
+            @Override
+            public void doClick(View v) {
+                PluginAgent.onClick(v);
+            }
+        });
     }
 
     @OnClick(R.id.button)
