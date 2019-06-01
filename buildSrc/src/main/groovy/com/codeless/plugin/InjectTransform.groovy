@@ -11,6 +11,7 @@ import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils
 import org.apache.commons.io.IOUtils
 import org.gradle.api.Project
+import org.gradle.api.Task
 
 import java.util.jar.JarEntry
 import java.util.jar.JarFile
@@ -54,7 +55,9 @@ class InjectTransform extends Transform {
             @NonNull Collection<TransformInput> referencedInputs,
             @Nullable TransformOutputProvider outputProvider,
             boolean isIncremental) throws IOException, TransformException, InterruptedException {
-        Log.info "==============${project.codelessConfig.pluginName + ' '}transform enter=============="
+        Log.info "==============${project.codelessConfig.pluginName} transform enter=============="
+        printProjectInfo(project)
+
         android = project.extensions.getByType(AppExtension)
 
         String appPackageName = getAppPackageName()
@@ -101,7 +104,7 @@ class InjectTransform extends Transform {
              */
             input.jarInputs.each { JarInput jarInput ->
                 String destName = jarInput.file.name
-                /** 重名名输出文件,因为可能同名,会覆盖*/
+                /** 重命名输出文件,因为可能同名,会覆盖*/
                 def hexName = DigestUtils.md5Hex(jarInput.file.absolutePath).substring(0, 8)
                 if (destName.endsWith(".jar")) {
                     destName = destName.substring(0, destName.length() - 4)
@@ -316,5 +319,30 @@ class InjectTransform extends Transform {
             Log.info("XmlParser Exception: " + e.getMessage())
         }
         packageName
+    }
+
+
+    // just to see test info
+    static void printProjectInfo(Project project) {
+        Task task = project.getTasks().getByName("assemble")
+        println "task by name(assemble): $task"
+        println ":applied plugin name =  ${project.codelessConfig.pluginName}"
+        println "read params: [keepQuiet: ${project.codelessConfig.keepQuiet}" +
+                ", showHelp: ${project.codelessConfig.showHelp}" +
+                ", watchTimeConsume: ${project.codelessConfig.watchTimeConsume}" +
+                ", enableTransform: ${project.codelessConfig.enableTransform}" +
+                ", targetPackages: ${project.codelessConfig.targetPackages}" +
+                ", hasApplicationPlugin: ${project.plugins.hasPlugin("com.android.application")}" +
+                "]"
+
+        //==========properties===========
+//        final def properties = project.getProperties()
+//        properties.forEach(new BiConsumer<String, Object>() {
+//            @Override
+//            void accept(String s, Object o) {
+//                Log.info "property, key = ${s},value = ${o}"
+//            }
+//        })
+//        Log.info "status = ${project.status}"
     }
 }

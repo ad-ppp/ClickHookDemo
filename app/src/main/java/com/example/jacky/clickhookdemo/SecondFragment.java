@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import com.tencent.bugly.crashreport.CrashReport;
 
 import java.util.Objects;
 
@@ -33,13 +32,25 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 button.setText("clicked...");
-                CrashReport.setUserId("debug=" + BuildConfig.DEBUG);
-                CrashReport.testJavaCrash();
+
+                //test bugly
+//                CrashReport.setUserId("debug=" + BuildConfig.DEBUG);
+//                CrashReport.testJavaCrash();
+
+                testConsumeMethod();
             }
         });
+    }
 
-        // throw new IllegalArgumentException("this is a test for crash");
-        // Log.d("123", String.valueOf(1 / 0));
+    /**
+     * 测试耗时方法
+     */
+    private void testConsumeMethod() {
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)

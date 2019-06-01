@@ -44,10 +44,9 @@ public class PluginAgent {
         boolean hasBusiness = false;
 
         Context context = view.getContext();
-        if (context instanceof Activity) {
-            String pageName = context.getClass().getName();
-            String currViewPath = PathUtil.getViewPath(view);
-            String eventId = StringEncrypt.Encrypt(pageName + currViewPath, StringEncrypt.DEFAULT);
+        String pageName = context.getClass().getName();
+        String currViewPath = PathUtil.getViewPath(view);
+        String eventId = StringEncrypt.Encrypt(pageName + currViewPath, StringEncrypt.DEFAULT);
 
 //            Map<String, Object> configureMap = Tracker.instance(context).getConfigureMap();
 //            if (null != configureMap) {
@@ -85,11 +84,10 @@ public class PluginAgent {
 //                Tracker.instance(context).trackEvent(eventId, null);
 //            }
 
-            Map<String, Object> map = new HashMap<>();
-            map.put(ConfigConstants.PAGENAME, pageName);
-            map.put(ConfigConstants.VIEWPATH, currViewPath);
-            Tracker.instance(context).trackEvent(eventId, map);
-        }
+        Map<String, Object> map = new HashMap<>();
+        map.put(ConfigConstants.PAGENAME, pageName);
+        map.put(ConfigConstants.VIEWPATH, currViewPath);
+        Tracker.instance(context).trackEvent(eventId, map);
     }
 
     public static void onClick(Object object, DialogInterface dialogInterface, int which) {

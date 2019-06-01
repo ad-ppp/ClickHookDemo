@@ -5,18 +5,23 @@ import com.codeless.plugin.utils.DataHelper
 import com.codeless.plugin.utils.Log
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-
-import java.util.function.BiConsumer
+import org.gradle.api.Task
 
 class InjectPluginImpl implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
         project.extensions.create('codelessConfig', InjectPluginParams)
-        printProjectInfo(project)       //test
+
+//        printProjectInfo(project)       //todo : test,useless, why?
+        Log.setQuiet(project.codelessConfig.keepQuiet)
+        Log.setShowHelp(project.codelessConfig.showHelp)
+        Log.logHelp()
+
         registerTransform(project)
         initDir(project)
         project.afterEvaluate {
+            Log.info "project afterEvaluate ====="
             if (project.codelessConfig.watchTimeConsume) {
                 project.gradle.addListener(new TimeListener())
             }
@@ -24,7 +29,7 @@ class InjectPluginImpl implements Plugin<Project> {
     }
 
     def static registerTransform(Project project) {
-        //caution:这边必须要这样写
+        // caution:这边必须要这样写
         final enableInnerTransform = project.getProperties().get("enableInnerTransform").toString().toBoolean()
         Log.info "===enableInnerTransform===${enableInnerTransform}"
         if (enableInnerTransform) {
@@ -43,25 +48,27 @@ class InjectPluginImpl implements Plugin<Project> {
         DataHelper.ext.pluginTmpDir = pluginTmpDir
     }
 
-    //just to see test info
+    // just to see test info
     static void printProjectInfo(Project project) {
-        println ":applied ${project.codelessConfig.pluginName}"
-        Log.setQuiet(project.codelessConfig.keepQuiet)
-        Log.setShowHelp(project.codelessConfig.showHelp)
-        Log.logHelp()
-
-        Log.info "watchTimeConsume :${project.codelessConfig.watchTimeConsume}"
-        Log.info "enableTransform :${project.codelessConfig.enableTransform}"
-        Log.info "is application =${project.plugins.hasPlugin("com.android.application")}"
+        Task task = project.getTasks().getByName("assemble")
+        println "task by name(assemble): $task"
+        println ":applied plugin name =  ${project.codelessConfig.pluginName}"
+        println "read params: [keepQuiet: ${project.codelessConfig.keepQuiet}" +
+                ", showHelp: ${project.codelessConfig.showHelp}" +
+                ", watchTimeConsume: ${project.codelessConfig.watchTimeConsume}" +
+                ", enableTransform: ${project.codelessConfig.enableTransform}" +
+                ", targetPackages: ${project.codelessConfig.targetPackages}" +
+                ", hasApplicationPlugin: ${project.plugins.hasPlugin("com.android.application")}" +
+                "]"
 
         //==========properties===========
-        final def properties = project.getProperties()
-        properties.forEach(new BiConsumer<String, Object>() {
-            @Override
-            void accept(String s, Object o) {
-                Log.info "property, key = ${s},value = ${o}"
-            }
-        })
-        Log.info "status = ${project.status}"
+//        final def properties = project.getProperties()
+//        properties.forEach(new BiConsumer<String, Object>() {
+//            @Override
+//            void accept(String s, Object o) {
+//                Log.info "property, key = ${s},value = ${o}"
+//            }
+//        })
+//        Log.info "status = ${project.status}"
     }
 }

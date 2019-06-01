@@ -11,8 +11,9 @@ public class SecondActivity extends TestActivity {
         setContentView(R.layout.activity_second);
 
         getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.container, new SecondFragment())
-                .replace(R.id.container, new ButterKnifeFragment())
+                .replace(R.id.container, new SecondFragment())
+//                .replace(R.id.container, new ButterKnifeFragment())
+//                .replace(R.id.container, new BuglyFragment())
                 .commit();
     }
 

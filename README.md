@@ -13,7 +13,6 @@
     不存在效率问题，只会牺牲一些编译速度.
     而且可以对第三方Library注入字节码实现。
 
-
 ---
 
 原理及用途可以参考：
@@ -52,6 +51,8 @@ The desugar step is executed normally after javac to optimize the bytecode. Enab
 
 ##### 4. [To many file open 限制](https://superuser.com/questions/433746/is-there-a-fix-for-the-too-many-open-files-in-system-error-on-os-x-10-7-1/443168#443168)
 
+
+##### 5. [如何debug gradle plugin](https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/)
 
 ##### 积累
 1. [Class#defineClass](https://paper.seebug.org/572/)
