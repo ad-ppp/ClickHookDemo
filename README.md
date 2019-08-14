@@ -21,6 +21,7 @@
 1. plugin
 2. publish to local maven. ==> (./config/java-publish.gradle)
 3. publish to remote maven ==> (./config/upload_release.gradle || ./config/upload_debug.gradle)
+4. Hook to transform
 
 ---
 
