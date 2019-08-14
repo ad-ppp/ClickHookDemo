@@ -51,6 +51,26 @@ android {
 //        pickFirst 'Landroid/support/v7/recyclerview/extensions/AsyncDifferConfig'
         pickFirst 'android/support/v7/recyclerview/extensions/AsyncDifferConfig.class'
     }
+
+    def evaluateTag = "afterEvalute"
+    afterEvaluate {
+        println "enter $evaluateTag, $tasks"
+        tasks.matching {
+            it.name.startsWith('dex')
+        }.each { dx ->
+            println "$evaluateTag, dx path: ${dx.getPath()}"
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = []
+            }
+            dx.additionalParameters += '--multi-dex'
+            // 设置multidex.keep文件中class为第一个dex文件中包含的class，如果没有下一项设置此项无作用
+            dx.additionalParameters += "--main-dex-list=$projectDir/multidex.keep".toString()
+            //此项添加后第一个classes.dex文件只能包含-main-dex-list列表中class
+            dx.additionalParameters += '--minimal-main-dex'
+            //通过上面的number参数代表每个Dex文件中的最大id数，默认�?5535
+            dx.additionalParameters += '--set-max-idx-number=65535'
+        }
+    }
 }
 
 // get task name
@@ -80,24 +100,21 @@ dependencies {
 }
 
 // 直接引用buildSrc的插件类
-apply plugin: com.codeless.plugin.InjectPluginImpl
+apply plugin: 'com.codeless.plugin'
 
+/**
+ *      String pluginName = ''
+ *     HashSet<String> targetPackages = []
+ *     boolean showHelp = false
+ *     boolean scanAllPackages = false
+ *     boolean watchTimeConsume = true
+ *     boolean enable = true
+ *     boolean learnMode = false
+ */
 codelessConfig {
-    //this will determine the name of this plugin transform, no practical use.
     pluginName = 'codeless-plugin'
-    //turn this on to make it print help content, default value is true
     showHelp = true
-    //this flag will decide whether the log of the modifying process be printed or not, default value is false
-    keepQuiet = true
-    //this is a kit feature of the plugin, set it true to see the time consume of this build
-    watchTimeConsume = true
-
-    enableTransform = false
-
-    //this is the most important part, 3rd party JAR packages that want our plugin to inject;
-    //our plugin will inject package defined in 'AndroidManifest.xml' and 'butterknife.internal.butterknife.internal.DebouncingOnClickListener' by default.
-    //structure is like ['butterknife.internal','com.a.c'], type is HashSet<String>.
-    //You can also specify the name of the class;
-    //example: ['com.xxx.xxx.BaseFragment']
-    targetPackages = ['123.com']
+    logable = true
+    learnMode = true
+    targetPackages = ['skin.support.app', 'com.common.module.view', 'cn.xhb.onekeyshare']
 }

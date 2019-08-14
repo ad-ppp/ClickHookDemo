@@ -1,74 +1,49 @@
 package com.codeless.plugin
 
-import com.android.build.gradle.BaseExtension
-import com.codeless.plugin.utils.DataHelper
-import com.codeless.plugin.utils.Log
+import com.codeless.plugin.extension.CodelessExtension
+import com.codeless.plugin.transform.InjectTransform
+import com.codeless.plugin.util.Log
+import com.google.common.base.Strings
+import org.gradle.api.GradleException
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.Task
 
 class InjectPluginImpl implements Plugin<Project> {
+    final String DEFAULT_PLUGIN_NAME = "LazierTracker"
+    final String TAG = "InjectPluginImpl"
 
     @Override
     void apply(Project project) {
-        project.extensions.create('codelessConfig', InjectPluginParams)
+        project.extensions.create('codelessConfig', CodelessExtension)
+        if (!project.plugins.hasPlugin('com.android.application')) {
+            throw new GradleException('xhb-codeless-plugin, Android Application plugin required')
+        }
 
-//        printProjectInfo(project)       //todo : test,useless, why?
-        Log.setQuiet(project.codelessConfig.keepQuiet)
-        Log.setShowHelp(project.codelessConfig.showHelp)
-        Log.logHelp()
-
-        registerTransform(project)
-        initDir(project)
         project.afterEvaluate {
-            Log.info "project afterEvaluate ====="
-            if (project.codelessConfig.watchTimeConsume) {
-                project.gradle.addListener(new TimeListener())
+            def android = project.extensions.android
+            def configuration = project.codelessConfig
+
+
+            Log.setEnable(configuration.logable)
+            Log.setLearn(configuration.learnMode)
+            Log.setShowHelp(configuration.showHelp)
+            Log.i(TAG, "[enable log:${configuration.logable}]" +
+                    "[learn more:${configuration.learnMode}]" +
+                    "[showHelp:${configuration.showHelp}]")
+
+            android.applicationVariants.all { variant ->
+                if (Strings.isNullOrEmpty(configuration.pluginName)) {
+                    configuration.pluginName = DEFAULT_PLUGIN_NAME
+                }
+
+//                project.gradle.addListener(new TimeListener())
+
+                def enable = project.getProperties().get("enableInnerTransform").toString().trim().toBoolean()
+                if (enable) {
+                    Log.i(TAG, "enable InjectPluginImpl,start...")
+                    InjectTransform.inject(project, variant)
+                }
             }
         }
-    }
-
-    def static registerTransform(Project project) {
-        // caution:这边必须要这样写
-        final enableInnerTransform = project.getProperties().get("enableInnerTransform").toString().toBoolean()
-        Log.info "===enableInnerTransform===${enableInnerTransform}"
-        if (enableInnerTransform) {
-            BaseExtension android = project.extensions.getByType(BaseExtension)
-            InjectTransform transform = new InjectTransform(project)
-            android.registerTransform(transform)
-        }
-    }
-
-    static void initDir(Project project) {
-        File pluginTmpDir = new File(project.buildDir, 'LazierTracker')
-        Log.info("plugin work dir:" + pluginTmpDir.getAbsolutePath())
-        if (!pluginTmpDir.exists()) {
-            pluginTmpDir.mkdir()
-        }
-        DataHelper.ext.pluginTmpDir = pluginTmpDir
-    }
-
-    // just to see test info
-    static void printProjectInfo(Project project) {
-        Task task = project.getTasks().getByName("assemble")
-        println "task by name(assemble): $task"
-        println ":applied plugin name =  ${project.codelessConfig.pluginName}"
-        println "read params: [keepQuiet: ${project.codelessConfig.keepQuiet}" +
-                ", showHelp: ${project.codelessConfig.showHelp}" +
-                ", watchTimeConsume: ${project.codelessConfig.watchTimeConsume}" +
-                ", enableTransform: ${project.codelessConfig.enableTransform}" +
-                ", targetPackages: ${project.codelessConfig.targetPackages}" +
-                ", hasApplicationPlugin: ${project.plugins.hasPlugin("com.android.application")}" +
-                "]"
-
-        //==========properties===========
-//        final def properties = project.getProperties()
-//        properties.forEach(new BiConsumer<String, Object>() {
-//            @Override
-//            void accept(String s, Object o) {
-//                Log.info "property, key = ${s},value = ${o}"
-//            }
-//        })
-//        Log.info "status = ${project.status}"
     }
 }

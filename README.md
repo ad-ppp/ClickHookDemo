@@ -12,11 +12,15 @@
 优点：
     不存在效率问题，只会牺牲一些编译速度.
     而且可以对第三方Library注入字节码实现。
-
 ---
 
 原理及用途可以参考：
 [公众号：一起玩转Android项目中的字节码](https://mp.weixin.qq.com/s/s4WgLFN0A-vO0ko0wi25mA)
+
+功能介绍：
+1. plugin
+2. publish to local maven. ==> (./config/java-publish.gradle)
+3. publish to remote maven ==> (./config/upload_release.gradle || ./config/upload_debug.gradle)
 
 ---
 
@@ -53,6 +57,9 @@ The desugar step is executed normally after javac to optimize the bytecode. Enab
 
 
 ##### 5. [如何debug gradle plugin](https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/)
+
+##### 6. 插桩后不能debug
+原因是因为： ClassReader#accept 的第二个方法，不能设置成 ClassReader.SKIP_DEBUG， 设置成 ClassReader.EXPAND_FRAMES 就支持源码debug。参考(ASM Core Api 详解)[https://www.jianshu.com/p/abd1b1b8d3f3]
 
 ##### 积累
 1. [Class#defineClass](https://paper.seebug.org/572/)

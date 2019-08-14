@@ -1,0 +1,14 @@
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "http://nexus.xiaoheiban.cn/repository/component/") {
+            authentication(userName: "develop", password: "xhb123")
+        }
+        pom.name = "xhb-plugin"
+        pom.groupId = "com.xhb.plugin"
+        pom.artifactId = "traceless" //不同组件对应的pom.artifactId不同
+        pom.version = "1.0.2"    //release 版本不需要加SNAPSHOT:1.0.0即可
+        pom.packaging = 'aar'
+    }
+}

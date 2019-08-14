@@ -1,0 +1,107 @@
+allArtifact files println start
+/Users/yangjianfei/myWidget/android/ad-ppp/ClickHookDemo/buildSrc/build/libs/buildSrc-2.0.5.jar
+allArtifact files println end
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+WARNING: The option 'android.enableD8' is deprecated and should not be used anymore.
+Use 'android.enableD8=true' to remove this warning.
+It will be removed in the future AGP versions. For more details, see https://d.android.com/r/studio-ui/d8-overview.html.
+task by name(assemble): task ':app:assemble'
+app: 'annotationProcessor' dependencies won't be recognized as kapt annotation processors. Please change the configuration name to 'kapt' for these artifacts: 'com.jakewharton:butterknife-compiler:8.8.1' and apply the kapt plugin: "apply plugin: 'kotlin-kapt'".
+enter afterEvalute, [task ':app:androidDependencies', task ':app:assemble', task ':app:assembleAndroidTest', task ':app:assembleDebug', task ':app:assembleDebugAndroidTest', task ':app:assembleDebugUnitTest', task ':app:assembleRelease', task ':app:assembleReleaseUnitTest', task ':app:buildDebugPreBundle', task ':app:buildDependents', task ':app:buildNeeded', task ':app:buildReleasePreBundle', task ':app:bundle', task ':app:bundleDebug', task ':app:bundleDebugAndroidTestResources', task ':app:bundleDebugResources', task ':app:bundleRelease', task ':app:bundleReleaseResources', task ':app:check', task ':app:checkDebugAndroidTestClasspath', task ':app:checkDebugClasspath', task ':app:checkDebugLibraries', task ':app:checkDebugManifest', task ':app:checkReleaseClasspath', task ':app:checkReleaseLibraries', task ':app:checkReleaseManifest', task ':app:cleanBuildCache', task ':app:compileDebugAidl', task ':app:compileDebugAndroidTestAidl', task ':app:compileDebugAndroidTestJavaWithJavac', task ':app:compileDebugAndroidTestKotlin', task ':app:compileDebugAndroidTestNdk', task ':app:compileDebugAndroidTestRenderscript', task ':app:compileDebugAndroidTestShaders', task ':app:compileDebugAndroidTestSources', task ':app:compileDebugJavaWithJavac', task ':app:compileDebugKotlin', task ':app:compileDebugNdk', task ':app:compileDebugRenderscript', task ':app:compileDebugShaders', task ':app:compileDebugSources', task ':app:compileDebugUnitTestJavaWithJavac', task ':app:compileDebugUnitTestKotlin', task ':app:compileDebugUnitTestSources', task ':app:compileLint', task ':app:compileReleaseAidl', task ':app:compileReleaseJavaWithJavac', task ':app:compileReleaseKotlin', task ':app:compileReleaseNdk', task ':app:compileReleaseRenderscript', task ':app:compileReleaseShaders', task ':app:compileReleaseSources', task ':app:compileReleaseUnitTestJavaWithJavac', task ':app:compileReleaseUnitTestKotlin', task ':app:compileReleaseUnitTestSources', task ':app:connectedAndroidTest', task ':app:connectedCheck', task ':app:connectedDebugAndroidTest', task ':app:consumeConfigAttr', task ':app:createDebugCompatibleScreenManifests', task ':app:createMockableJar', task ':app:createReleaseCompatibleScreenManifests', task ':app:deviceAndroidTest', task ':app:deviceCheck', task ':app:extractApksForDebug', task ':app:extractApksForRelease', task ':app:extractProguardFiles', task ':app:generateDebugAndroidTestAssets', task ':app:generateDebugAndroidTestBuildConfig', task ':app:generateDebugAndroidTestResValues', task ':app:generateDebugAndroidTestResources', task ':app:generateDebugAndroidTestSources', task ':app:generateDebugAssets', task ':app:generateDebugBuildConfig', task ':app:generateDebugFeatureMetadata', task ':app:generateDebugFeatureTransitiveDeps', task ':app:generateDebugResValues', task ':app:generateDebugResources', task ':app:generateDebugSources', task ':app:generateDebugUnitTestAssets', task ':app:generateDebugUnitTestResources', task ':app:generateDebugUnitTestSources', task ':app:generateReleaseAssets', task ':app:generateReleaseBuildConfig', task ':app:generateReleaseFeatureMetadata', task ':app:generateReleaseFeatureTransitiveDeps', task ':app:generateReleaseResValues', task ':app:generateReleaseResources', task ':app:generateReleaseSources', task ':app:generateReleaseUnitTestAssets', task ':app:generateReleaseUnitTestResources', task ':app:generateReleaseUnitTestSources', task ':app:installDebug', task ':app:installDebugAndroidTest', task ':app:installRelease', task ':app:javaPreCompileDebug', task ':app:javaPreCompileDebugAndroidTest', task ':app:javaPreCompileDebugUnitTest', task ':app:javaPreCompileRelease', task ':app:javaPreCompileReleaseUnitTest', task ':app:lint', task ':app:lintDebug', task ':app:lintFix', task ':app:lintRelease', task ':app:lintVitalRelease', task ':app:mainApkListPersistenceDebug', task ':app:mainApkListPersistenceDebugAndroidTest', task ':app:mainApkListPersistenceRelease', task ':app:makeApkFromBundleForDebug', task ':app:makeApkFromBundleForRelease', task ':app:mergeDebugAndroidTestAssets', task ':app:mergeDebugAndroidTestJniLibFolders', task ':app:mergeDebugAndroidTestResources', task ':app:mergeDebugAndroidTestShaders', task ':app:mergeDebugAssets', task ':app:mergeDebugJniLibFolders', task ':app:mergeDebugResources', task ':app:mergeDebugShaders', task ':app:mergeReleaseAssets', task ':app:mergeReleaseJniLibFolders', task ':app:mergeReleaseResources', task ':app:mergeReleaseShaders', task ':app:packageAppClassesDebug', task ':app:packageAppClassesDebugAndroidTest', task ':app:packageAppClassesDebugUnitTest', task ':app:packageAppClassesRelease', task ':app:packageAppClassesReleaseUnitTest', task ':app:packageDebug', task ':app:packageDebugAndroidTest', task ':app:packageDebugBundle', task ':app:packageDebugUniversalApk', task ':app:packageRelease', task ':app:packageReleaseBundle', task ':app:packageReleaseUniversalApk', task ':app:preBuild', task ':app:preDebugAndroidTestBuild', task ':app:preDebugBuild', task ':app:preDebugUnitTestBuild', task ':app:preReleaseBuild', task ':app:preReleaseUnitTestBuild', task ':app:prepareLintJar', task ':app:processDebugAndroidTestJavaRes', task ':app:processDebugAndroidTestManifest', task ':app:processDebugAndroidTestResources', task ':app:processDebugJavaRes', task ':app:processDebugManifest', task ':app:processDebugResources', task ':app:processDebugUnitTestJavaRes', task ':app:processReleaseJavaRes', task ':app:processReleaseManifest', task ':app:processReleaseResources', task ':app:processReleaseUnitTestJavaRes', task ':app:reportBuildArtifactsDebug', task ':app:reportBuildArtifactsRelease', task ':app:reportSourceSetTransformAndroidTest', task ':app:reportSourceSetTransformAndroidTestDebug', task ':app:reportSourceSetTransformDebug', task ':app:reportSourceSetTransformMain', task ':app:reportSourceSetTransformRelease', task ':app:reportSourceSetTransformTest', task ':app:reportSourceSetTransformTestDebug', task ':app:reportSourceSetTransformTestRelease', task ':app:resolveConfigAttr', task ':app:shrinkReleaseResources', task ':app:signingReport', task ':app:sourceSets', task ':app:splitsDiscoveryTaskDebug', task ':app:splitsDiscoveryTaskRelease', task ':app:taskTree', task ':app:test', task ':app:testDebugUnitTest', task ':app:testReleaseUnitTest', task ':app:transformClassesAndDexWithShrinkResForRelease', task ':app:transformClassesAndResourcesWithProguardForRelease', task ':app:transformClassesWithDexBuilderForDebug', task ':app:transformClassesWithDexBuilderForDebugAndroidTest', task ':app:transformClassesWithDexForRelease', task ':app:transformDexArchiveWithDexMergerForDebug', task ':app:transformDexArchiveWithDexMergerForDebugAndroidTest', task ':app:transformDexArchiveWithExternalLibsDexMergerForDebug', task ':app:transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest', task ':app:transformNativeLibsWithMergeJniLibsForDebug', task ':app:transformNativeLibsWithMergeJniLibsForDebugAndroidTest', task ':app:transformNativeLibsWithMergeJniLibsForRelease', task ':app:transformNativeLibsWithStripDebugSymbolForDebug', task ':app:transformNativeLibsWithStripDebugSymbolForRelease', task ':app:transformResourcesWithMergeJavaResForDebug', task ':app:transformResourcesWithMergeJavaResForDebugAndroidTest', task ':app:transformResourcesWithMergeJavaResForDebugUnitTest', task ':app:transformResourcesWithMergeJavaResForRelease', task ':app:transformResourcesWithMergeJavaResForReleaseUnitTest', task ':app:uninstallAll', task ':app:uninstallDebug', task ':app:uninstallDebugAndroidTest', task ':app:uninstallRelease', task ':app:validateSigningDebug', task ':app:validateSigningDebugAndroidTest', task ':app:validateSigningRelease', task ':app:writeDebugApplicationId', task ':app:writeReleaseApplicationId']
+[INFO][InjectPluginImpl][enable log:true][learn more:true][showHelp:true]
+[INFO][InjectPluginImpl]enable InjectPluginImpl,start...
+[INFO][InjectPluginImpl]enable InjectPluginImpl,start...
+allArtifact files println start
+/Users/yangjianfei/myWidget/android/ad-ppp/ClickHookDemo/buildSrc/build/libs/buildSrc-2.0.5.jar
+allArtifact files println end
+WARNING: The option 'android.enableD8' is deprecated and should not be used anymore.
+Use 'android.enableD8=true' to remove this warning.
+It will be removed in the future AGP versions. For more details, see https://d.android.com/r/studio-ui/d8-overview.html.
+[INFO][originTransform]scopes: [PROJECT, SUB_PROJECTS, EXTERNAL_LIBRARIES, MAIN_SPLIT]
+inputTypes: [CLASSES]
+isIncremental: true
+find dex transform. transform class: class com.android.build.gradle.internal.transforms.DexArchiveBuilderTransform . task name: transformClassesWithDexBuilderForDebug
+transform class after hook: class com.codeless.plugin.transform.InjectTransform
+:app:checkDebugClasspath UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:tracker:preBuild UP-TO-DATE
+:tracker:preDebugBuild UP-TO-DATE
+:tracker:checkDebugManifest UP-TO-DATE
+:tracker:processDebugManifest UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:tracker:compileDebugAidl NO-SOURCE
+:app:compileDebugAidl NO-SOURCE
+:tracker:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mainApkListPersistenceDebug UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:tracker:compileDebugRenderscript UP-TO-DATE
+:tracker:generateDebugResValues UP-TO-DATE
+:tracker:generateDebugResources UP-TO-DATE
+:tracker:packageDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:tracker:generateDebugRFile UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:tracker:generateDebugBuildConfig UP-TO-DATE
+:tracker:prepareLintJar UP-TO-DATE
+:tracker:generateDebugSources UP-TO-DATE
+:tracker:javaPreCompileDebug UP-TO-DATE
+:tracker:compileDebugJavaWithJavac UP-TO-DATE
+:tracker:processDebugJavaRes NO-SOURCE
+:tracker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:app:compileDebugKotlin UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:javaPreCompileDebug UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:tracker:mergeDebugShaders UP-TO-DATE
+:tracker:compileDebugShaders UP-TO-DATE
+:tracker:generateDebugAssets UP-TO-DATE
+:tracker:packageDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:tracker:compileDebugNdk NO-SOURCE
+:tracker:mergeDebugJniLibFolders UP-TO-DATE
+:tracker:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:tracker:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:tracker:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:app:checkDebugLibraries UP-TO-DATE
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug UP-TO-DATE
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+47 actionable tasks: 47 up-to-date
