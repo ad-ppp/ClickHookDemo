@@ -62,6 +62,9 @@ The desugar step is executed normally after javac to optimize the bytecode. Enab
 ##### 6. 插桩后不能debug
 原因是因为： ClassReader#accept 的第二个方法，不能设置成 ClassReader.SKIP_DEBUG， 设置成 ClassReader.EXPAND_FRAMES 就支持源码debug。参考(ASM Core Api 详解)[https://www.jianshu.com/p/abd1b1b8d3f3]
 
+##### 7. apply plugin的名字
+是定义在plugin模块下的resources/META-INF/gradle-plugins/**.properties 里面，这个File名字就是其他模块apply时候指定的插件名字
+
 ##### 积累
 1. [Class#defineClass](https://paper.seebug.org/572/)
 2. 如果需要理解asm解析class的机制需要了解class相关的结构。相关链接可以参考：

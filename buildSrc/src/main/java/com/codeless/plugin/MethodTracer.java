@@ -2,15 +2,9 @@ package com.codeless.plugin;
 
 import com.codeless.plugin.util.Log;
 import com.codeless.plugin.util.Util;
-
 import org.apache.commons.io.IOUtils;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
@@ -118,8 +112,8 @@ public class MethodTracer {
                 } else {
                     inputStream = new ByteArrayInputStream(srcByteCode);
                 }
-                Log.i(TAG, "modify class in jar[%s] [I:%s]\n"
-                        , output.getAbsolutePath(), classPkg);
+                Log.i(TAG, "modify class in jar [%s]\n[I:%s]\n[o:%s]\n\n"
+                        , classPkg, input.getAbsolutePath(), output.getAbsolutePath());
                 Util.addZipEntry(jarOutputStream, new ZipEntry(entryName), inputStream);
             }
         } catch (IOException e) {
